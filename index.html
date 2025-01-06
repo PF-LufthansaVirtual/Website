@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PF Lufthansa Virtual</title>
+    <style>
+        /* Allgemeines Layout */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: #000;
+        }
+
+        /* Header-Leiste */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 10px 20px;
+        }
+
+        /* Profilbild */
+        #logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-image: url('https://media.discordapp.net/attachments/1316870981016616970/1325245168944939008/1920_default-bild-newsroom.jpg?ex=677d107e&is=677bbefe&hm=8b351877268553386279e8e0088ff238f66896f29e1bdd888e6ff7aed8bd7d31&=&format=webp&width=1193&height=671');
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        /* Dropdown-Menü */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+
+        /* Button mit Schatten */
+        .join-button {
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease;
+        }
+
+        .join-button:hover {
+            background-color: #444;
+        }
+
+        /* Hintergrundbild */
+        .hero {
+            background-image: url('https://cdn.discordapp.com/attachments/1316870981016616970/1325902901767442493/Screenshot_2025-01-04_at_2.png?ex=677d7acd&is=677c294d&hm=188b85afb78e3a900a8c6925d8078ed6f4a9b046203b53f95e929dbb7399dcd1&');
+            background-size: cover;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Text auf dem Hintergrundbild */
+        .hero .content {
+            text-align: center;
+        }
+
+        /* Abgerundetes Bild */
+        .rounded-img {
+            border-radius: 15px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        /* Abschnitt mit schwarzem Hintergrund */
+        .black-section {
+            background-color: #000;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        /* Textabschnitt */
+        .text-content {
+            font-size: 18px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .text-content p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="logo" onclick="window.location.href='https://discord.gg/fz923z2BgP';"></div>
+        <span>PF Lufthansa Virtual</span>
+        <div class="dropdown">
+            <span>Be Part of the Team</span>
+            <div class="dropdown-content">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdR6SYXTZ5AFIvW9WY-KR7VdzQ23l43CqrgD5XfYtaB1_YXbA/viewform?usp=dialog">Event Team</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSezr5bcnYtlfrwMq7MuDNiq-ijdH8NQ5UYSDojJZCnajGyOig/viewform?usp=sharing">Design Team</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScpRzTpJt34OxLlPLa_zx_Te_nZu2NFSMvzqxNCWcN-UYnV_w/viewform?usp=dialog">Marketing Team</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfjzGo1na6-H8x1bPecckv-fNaZCRtMU9btfaswOIjPOzfbPA/viewform?usp=dialog">Development Team</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hintergrundbild mit JOIN NOW Button -->
+    <div class="hero">
+        <div class="content">
+            <button class="join-button" onclick="window.location.href='https://discord.gg/fz923z2BgP'">JOIN NOW</button>
+        </div>
+    </div>
+
+    <!-- Abschnitt mit schwarzem Hintergrund und Bild/Text -->
+    <div class="black-section">
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <img class="rounded-img" src="https://discord.gg/fz923z2BgP" alt="Image">
+            <div class="text-content" style="margin-left: 20px;">
+                <h2>PF Lufthansa Virtual</h2>
+                <p>PF Lufthansa Virtual is a vibrant and dynamic virtual airline dedicated to bringing together aviation enthusiasts from around the world. Our goal is to provide a realistic and enjoyable flying experience, fostering a strong sense of community and teamwork.</p>
+                <p>We simulate real-world operations and routes, offering a wide range of opportunities for pilots, from new enthusiasts to experienced professionals. Whether you're interested in flying for fun or striving to develop your skills, PF Lufthansa Virtual provides a platform for personal growth, community engagement, and exciting aviation adventures.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Code-Schnipsel für eine neue Infoseite mit Bild links -->
+    <div style="background-color: #000; padding: 50px 20px; text-align: center;">
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <img class="rounded-img" src="IMAGE_URL_HERE" alt="New Image">
+            <div class="text-content" style="margin-left: 20px;">
+                <h2>Title of the New Info Page</h2>
+                <p>Insert your text content here. This can include information related to the new section of the site, details, and any other content you'd like to display.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
