@@ -24,7 +24,7 @@ header {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-image: url('Picture1.png');
+    background-image: url('Fotos/Picture1.png');
     background-size: cover;
     cursor: pointer;
     margin-right: 10px;
@@ -149,7 +149,7 @@ a {
 
 /* Hintergrundbild */
 .hero {
-    background-image: url('Picture2.png');
+    background-image: url('Fotos/Picture2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -161,7 +161,7 @@ a {
 }
 
 .hero_Routes {
-    background-image: url('Picture2.png');
+    background-image: url('Fotos/Picture2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

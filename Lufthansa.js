@@ -66,8 +66,9 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector('.faqstart').addEventListener('click', function() {
         faqdisplay("faqstart", "arrowfaq2", openfaq2);
     });
+});
     
-    
+document.addEventListener("DOMContentLoaded", function() {
     let openimg = null;
     
     function imageresize(image) {
