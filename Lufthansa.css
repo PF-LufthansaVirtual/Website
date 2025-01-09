@@ -1,0 +1,433 @@
+@charset "utf-8";
+
+/* Allgemeines Layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Header-Leiste */
+header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 0px 20px;
+    width: 98%;
+    border-bottom: 2px solid white;
+    position: fixed;
+    z-index: 2;
+}
+
+/* Profilbild */
+#logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('Picture1.png');
+    background-size: cover;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+/* Text neben dem Logo */
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.language-select,
+.lang-select {
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    background-color: #000;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-radius: 0 0 1em 0;
+    cursor: pointer;
+}
+
+.language-select {
+    padding: 10px 10px;
+}
+
+.lang-select {
+    text-align: center;
+    padding-top: 10px;
+    top: 143%;
+    transform: translateX(-100%);
+}
+
+.lang-select a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 7px 33.5px;
+}
+
+.lang-select a:hover {
+    background-color: #575757;
+}
+
+/* Dropdown-Menü */
+.dropdown {
+    display: inline-block;
+    margin-left: auto;
+    padding: 25px 0;
+}
+
+.dropdown-content-en,
+.dropdown-content-de {
+    display: block;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-radius: 0 0 0 1em;
+    transition: transform 1s ease;
+}
+
+.dropdown:hover .dropdown-content-en,
+.dropdown:hover .dropdown-content-de {
+    transform: translate(0, 13%);
+    transition: transform 1s ease;
+}
+
+.dropdown-content-en {
+    transform: translate(125%, 13%);
+}
+
+.dropdown:hover .dropdown-content-en {
+    transform: translate(0, 13%);
+}
+
+.dropdown-content-de {
+    transform: translate(125%, 14.5%);
+}
+
+.dropdown:hover .dropdown-content-de {
+    transform: translate(10%, 14.5%);
+}
+
+.dropdown-content-en a,
+.dropdown-content-de a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-en a:hover,
+.dropdown-content-de a:hover {
+    background-color: #575757;
+}
+
+/* Button mit Schatten */
+.join-button {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+    border-radius: 1em 1em 1em 1em;
+    position: fixed;
+}
+
+.join-button:hover {
+    background-color: #444;
+}
+
+/* Hintergrundbild */
+.hero {
+    background-image: url('Picture2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 91.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.hero_Routes {
+    background-image: url('Picture2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+/* Abschnitt mit schwarzem Hintergrund */
+.black-section {
+    background-color: #000;
+    padding: 10px 20px;
+    text-align: center;
+    padding-bottom: 100px; /* Erweiterung nach unten */
+    position: relative;
+}
+
+/* Neues Bild linksbündig */
+.image-text-left {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    justify-content: flex-start;
+    padding-left: 20px; /* Etwas Abstand für das Bild und den Text */
+}
+
+.image-text-left img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.image-text-left .text {
+    max-width: 600px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.faqpilot,
+.faqstart {
+    background-color: #444;
+    padding: 20px;
+    margin: 10px;
+    width: 700px;
+    text-align: left;
+    transform: translateX(550px);
+    cursor: pointer;
+}
+
+.faqpilot {
+    margin-bottom: 0;
+    border-radius: 1em 1em 0 0;
+    border-bottom: 1px solid white;
+}
+
+.faqstart {
+    margin-top: 0;
+    margin-bottom: 50px;
+    border-radius: 0 0 1em 1em;
+    border-top: 1px solid white;
+}
+
+.faqpilot2,
+.faqstart2 {
+    display: none;
+    margin-top: 10px;
+}
+
+.trusted img{
+    max-width: 150px;
+    margin: 20px;
+    border-radius: 1em 1em 1em 1em;
+}
+
+.Routes {
+    position: fixed;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2em 0.5em 0.5em 2em;
+    min-width: 150vh;
+    height: 70vh;
+    text-align: center;
+    overflow: auto;
+}
+
+.Routes::-webkit-scrollbar {
+    width: 10px;
+}
+
+.Routes::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+.Routes::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+.Routes::-webkit-scrollbar-track {
+    background: #aaa;
+    border-radius: 10px;
+}
+
+.Startseite {
+    position: fixed;
+    background-color: #000;
+    transform: translateY(-100%);
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    border-radius: 0 1em 0 0;
+    padding: 0 30px;
+}
+
+.allerouten,
+.lufthansagroup,
+.aeropints {
+    background-color: #222;
+    border-radius: 1em 1em 1em 1em;
+    padding: 10px;
+    margin: 30px;
+    text-align: center;
+}
+
+.Route1,
+.Route2,
+.Route3,
+.Route4,
+.Route5,
+.Route6,
+.Route7,
+.Route8,
+.Route9,
+.Route10,
+.Route11,
+.Route12,
+.Route13,
+.Route14,
+.Route15,
+.Route16,
+.Route17,
+.Route18,
+.Route19,
+.Route20,
+.Route21,
+.Route22,
+.Route23,
+.Route24,
+.Route25,
+.Route26,
+.Route27,
+.Route28,
+.Route29,
+.Route30,
+.Route31,
+.Route32,
+.Route33,
+.Route34,
+.Route35,
+.Route36,
+.Route37,
+.Route38,
+.Lufthansagroup,
+.Aeropints {
+    background-color: #444;
+    border-radius: 1em 1em 1em 1em;
+    padding: 25px;
+    margin: 20px 10px;
+    text-align: left;
+}
+
+.Route1 img,
+.Route2 img,
+.Route3 img,
+.Route4 img,
+.Route5 img,
+.Route6 img,
+.Route7 img,
+.Route8 img,
+.Route9 img,
+.Route10 img,
+.Route11 img,
+.Route12 img,
+.Route13 img,
+.Route14 img,
+.Route15 img,
+.Route16 img,
+.Route17 img,
+.Route18 img,
+.Route19 img,
+.Route20 img,
+.Route21 img,
+.Route22 img,
+.Route23 img,
+.Route24 img,
+.Route25 img,
+.Route26 img,
+.Route27 img,
+.Route28 img,
+.Route29 img,
+.Route30 img,
+.Route31 img,
+.Route32 img,
+.Route33 img,
+.Route34 img,
+.Route35 img,
+.Route36 img,
+.Route37 img,
+.Route38 img {
+    position: absolute;
+    height: 90px;
+    transform: translate(1100px, -73.5px);
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    cursor: pointer;
+}
+
+#Route1-2,
+#Route2-2,
+#Route3-2,
+#Route4-2,
+#Route5-2,
+#Route6-2,
+#Route7-2,
+#Route8-2,
+#Route9-2,
+#Route10-2,
+#Route11-2,
+#Route12-2,
+#Route13-2,
+#Route14-2,
+#Route15-2,
+#Route16-2,
+#Route17-2,
+#Route18-2,
+#Route19-2,
+#Route20-2,
+#Route21-2,
+#Route22-2,
+#Route23-2,
+#Route24-2,
+#Route25-2,
+#Route26-2,
+#Route27-2,
+#Route28-2,
+#Route29-2,
+#Route30-2,
+#Route31-2,
+#Route32-2,
+#Route33-2,
+#Route34-2,
+#Route35-2,
+#Route36-2,
+#Route37-2,
+#Route38-2 {
+    position: fixed;
+    height: 600px;
+    border-radius: 2em 2em 2em 2em;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
