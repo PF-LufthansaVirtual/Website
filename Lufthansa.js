@@ -66,6 +66,28 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector('.faqstart').addEventListener('click', function() {
         faqdisplay("faqstart", "arrowfaq2", openfaq2);
     });
+    
+    
+    
+    
+    if (window.matchMedia("(max-width: 600px)").matches) {
+        var openmenu = false
+        
+        document.querySelector(".menu").addEventListener('click', function() {
+            openmenu = !openmenu
+            
+            if(openmenu) {
+                document.querySelector(".menustuff").style.display = "block";
+            } else {
+                document.querySelector(".menustuff").style.display = "none";
+            }
+        });
+        
+        document.querySelector(".dropdown").addEventListener('click', function() {
+            openmenu = false;
+            document.querySelector(".menustuff").style.display = "none";
+        });
+    }
 });
     
 document.addEventListener("DOMContentLoaded", function() {
@@ -468,6 +490,50 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let i = 1; i < 39; i++) {
         document.querySelector(`.Route${i} img`).addEventListener('click', function() {
             noopen = true;
+        });
+    }
+    
+    
+    
+    
+    
+    if (window.matchMedia("(max-width: 600px)").matches) {
+        var openmenu = false
+        
+        document.querySelector(".menu").addEventListener('click', function() {
+            openmenu = !openmenu
+            
+            if(openmenu) {
+                document.querySelector(".menustuff").style.display = "block";
+            } else {
+                document.querySelector(".menustuff").style.display = "none";
+            }
+        });
+        
+        document.querySelector(".dropdown").addEventListener('click', function() {
+            openmenu = false;
+            document.querySelector(".menustuff").style.display = "none";
+        });
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+   if (window.matchMedia("(max-width: 600px)").matches) {
+        var openmenu = false
+        
+        document.querySelector(".menu").addEventListener('click', function() {
+            openmenu = !openmenu
+            
+            if(openmenu) {
+                document.querySelector(".menustuff").style.display = "block";
+            } else {
+                document.querySelector(".menustuff").style.display = "none";
+            }
+        });
+        
+        document.querySelector(".dropdown").addEventListener('click', function() {
+            openmenu = false;
+            document.querySelector(".menustuff").style.display = "none";
         });
     }
 });
