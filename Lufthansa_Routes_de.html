@@ -19,16 +19,22 @@
             </div>
             <div class="lang-select">
                 <a id="lang-en" href="Lufthansa_Routes_en.html"> EN </a>
-                <a id="lang-de" href="Lufthansa_Routes_de.html"> <b> DE </b> </a>
+                <div class="langfix"><a id="lang-de" href="Lufthansa_Routes_de.html"><b> DE </b> </a></div>
             </div>
         </div>
+        <div class="Routesdash">
+            <a id="lang-en" href="Lufthansa_Routes_de.html"> <h3>Routen</h3> </a>
+        </div>
+        <div class="Staffdash">
+            <a id="lang-en" href="Lufthansa_staff_de.html"> <h3>Staff</h3> </a>
+        </div>
         <div class="dropdown">
-            <span>Sei Teil unseres Teams</span>
+            <span id="partteam">Sei Teil unseres Teams</span>
             <div class="dropdown-content-de">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdR6SYXTZ5AFIvW9WY-KR7VdzQ23l43CqrgD5XfYtaB1_YXbA/viewform?usp=dialog">Event Team</a>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSezr5bcnYtlfrwMq7MuDNiq-ijdH8NQ5UYSDojJZCnajGyOig/viewform?usp=sharing">Design Team</a>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScpRzTpJt34OxLlPLa_zx_Te_nZu2NFSMvzqxNCWcN-UYnV_w/viewform?usp=dialog">Marketing Team</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfjzGo1na6-H8x1bPecckv-fNaZCRtMU9btfaswOIjPOzfbPA/viewform?usp=dialog">Development Team</a>
+                <div class="dropdownfix"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfjzGo1na6-H8x1bPecckv-fNaZCRtMU9btfaswOIjPOzfbPA/viewform?usp=dialog">Development Team</a></div>
             </div>
         </div>
     </header>
@@ -38,25 +44,255 @@
     
     <div class="Routes">
         <h1> Routen </h1>
-        <div class="aeropints">
-            <h2>Aeropoints</h2>
-            <div class="Aeropints">
-                <p>Für jeden deine Flug, welches du mit einer der vorgegebenen Route, einem der vorgegeben Flugzeuge und einer der Airlines der Lufthansa Group fliegst und es <a href="https://docs.google.com/forms/d/e/1FAIpQLSeFIL7xpBnlCHS0clxO5JMr7N0GqJjfXCg_miIe928MPb3HjQ/viewform"><b>auf dieser Website</b></a> einträgst bekommst du Aeropints. Man bekommt sie auch wenn man in einem Event gewonnen hat. Du kannst auch alle von dir und auch anderen eingetragene Flüge und wie viele Punkte dafür gegeben waren <a href="https://docs.google.com/spreadsheets/d/1wn1r2uznQdqtVCvjGCeYQOGfB50SlmEoi0N3FT7ueDE/edit?gid=9757994#gid=9757994"><b>auf dieser Website</b></a> sehen.</p>
-                <p>Wie viele Punkte du bekommst hängt davon ab welche Route du geflogen bist und ob du den vorgegebenen Flugplan benutzt hast. So werden die Punkte berechnet:</p>
-                - Langstrecke: 75 + 15 mit Flugplan <br>
-                - Mittelstrecke: 50 + 15 mit Flugplan <br>
-                - Kurzstrecke: 25 + 15 mit Flugplan <br> <br>
-                <p>Abhängig davon wie viele Aeropoints du hast, bekommst du auch andere Rollen auf unserem Discord Server. Das sind die Rollen und wie viele Punkte man dafür braucht:</p>
-                - 0-299: Trainee <br>
-                - 300-749: First Officer <br>
-                - 750-1199: Senior First Officer <br>
-                - 1200-1999: Captain <br>
-                - 2000-2999: Senior Captain <br>
-                - 3000+: VIP
+        <div class="allerouten">
+            <h2>Routen und Flugpläne</h2>
+            <div class="long">
+                <h3><output id="route1"></output> Langstrecke <output id="route1-2"></output></h3>
+                <div class="long2">
+                    <div class="Route1">
+                        <b>MDST ✈︎ EFKT:</b> <br>
+                        PIXAR FALCON ROGER SARGO MEROS BRAVO SUDIP ROBUX <br>
+                        [A330 / B787] <br>
+                        <img src="Routen/Route1.png" alt="Route 1">
+                    </div>
+                    <div class="Route2">
+                        <b>EFKT ✈︎ MDST:</b> <br>
+                        KITTL DELTA ROSE MINTY LUNIK CDP63 VAXRI PC112 PC102 <br>
+                        [A330 / B787]<br>
+                        <img src="Routen/Route2.png" alt="Route 2">
+                    </div>
+                    <div class="Route3">
+                        <b>MDPC ✈︎ EFKT:</b> <br>
+                        MAROG PC101 KATOK JELLY CARME UBER BRAVO SUDIP ROBUX <br>
+                        [A330 / B787] <br>
+                        <img src="Routen/Route3.png" alt="Route 3">
+                    </div>
+                    <div class="Route4">
+                        <b>EFKT ✈︎ MDPC:</b> <br>
+                        KITTL DELTA ROSE MINTY LUNIK CDP63 BETIR PC115 PC113 BEREL <br>
+                        [A330 / B787] <br>
+                        <img src="Routen/Route4.png" alt="Route 4">
+                    </div>
+                </div>
+            </div>
+            <div class="middle">
+                <h3><output id="route2"></output> Mittelstrecke <output id="route2-2"></output></h3>
+                <div class="middle2">
+                    <div class="Route5">
+                        <b>MDPC ✈︎ EGKK:</b> <br>
+                        MAROG PC101 PC102 PC114 CHUMA FALCON ROGER NOVMA HAZEL <br>
+                        [A330 / A350 / B787 / B777 / MD-11] <br>
+                        <img src="Routen/Route5.png" alt="Route 5">
+                    </div>
+                    <div class="Route6">
+                        <b>EGKK ✈︎ MDPC:</b> <br>
+                        HAZEL WILLO TELTU ROGER FALCON POKEG PC115 PC113 BEREL <br>
+                        [A330 / A350 / B787 / B777 / MD-11] <br>
+                        <img src="Routen/Route6.png" alt="Route 6">
+                    </div>
+                    <div class="Route7">
+                        <b>MDPC ✈︎ LEHM:</b> <br>
+                        MAROG PC101 KATOK JELLY SYOL4 CARME CAT <br>
+                        [A330 / A350 / B787 / B777 / MD-11] <br>
+                        <img src="Routen/Route7.png" alt="Route 7">
+                    </div>
+                    <div class="Route8">
+                        <b>LEHM ✈︎ MDPC:</b> <br>
+                        TIMOR LUNIK ISKAL DICEY BETIR PC115 PC113 BEREL <br>
+                        [A330 / A350 / B787 / B777 / MD-11] <br>
+                        <img src="Routen/Route8.png" alt="Route 8">
+                    </div>
+                    <div class="Route9">
+                        <b>MDPC ✈︎ LYTV:</b> <br>
+                        MAROG PC101 KATOK VAXRI NAPEV ULTRA BABY GOSUT <br>
+                        [A330 / B787 / MD-11] <br>
+                        <img src="Routen/Route9.png" alt="Route 9">
+                    </div>
+                    <div class="Route10">
+                        <b>LYTV ✈︎ MDPC:</b> <br>
+                        TIVTI DEALT NAPEV ANTEX PC112 PC115 PC113 BEREL <br>
+                        [A330 / B787 / MD-11] <br>
+                        <img src="Routen/Route10.png" alt="Route 10">
+                    </div>
+                    <div class="Route11">
+                        <b>LYTV ✈︎ EGKK:</b> <br>
+                        GOSUT STAR NIK OLIVU MNH61 MEROS MINTY DETLING TEBRA<br>
+                        [A330 / B787 / MD-11] <br>
+                        <img src="Routen/Route11.png" alt="Route 11">
+                    </div>
+                    <div class="Route12">
+                        <b>EGKK ✈︎ LYTV:</b> <br>
+                        HAZEL WILLO HOLLY KUNAV MEROS OXY NEON EROVA BABY GOSUT <br>
+                        [A330 / B787 / MD-11] <br>
+                        <img src="Routen/Route12.png" alt="Route 12">
+                    </div>
+                    <div class="Route13">
+                        <b>LYTV ✈︎ EFKT:</b> <br>
+                        TIVTI OKLA MAMOL DESOL EFLA BRAVO SUDIP ROBUX <br>
+                        [A330 / B787 / MD-11] <br>
+                        <img src="Routen/Route13.png" alt="Route 13">
+                    </div>
+                    <div class="Route14">
+                        <b>EFKT ✈︎ LYTV:</b> <br>
+                        KITTL DELTA ROSE KONAN OXY NEON EROVA BABY GOSUT <br>
+                        [A330 / B787 / MD-11] <br>
+                        <img src="Routen/Route14.png" alt="Route 14">
+                    </div>
+                    <div class="Route15">
+                        <b>LYTV ✈︎ GCLP:</b> <br>
+                        GOSUT STAR NIK OLIVU MORSS SENOT OPERA KOPUD DELAP ECKOS<br>
+                        [A330 / B787 / MD-11] <br>
+                        <img src="Routen/Route15.png" alt="Route 15">
+                    </div>
+                    <div class="Route16">
+                        <b>GCLP ✈︎ LYTV:</b> <br>
+                        DRANO BANZAI VAXRI NAPEV ULTRA BABY GOSUT <br>
+                        [A330 / B787 / MD-11] <br>
+                        <img src="Routen/Route16.png" alt="Route 16">
+                    </div>
+                    <div class="Route17">
+                        <b>EFKT ✈︎ GCLP:</b> <br>
+                        KITTL DELTA ROSE MINTY KUNAV LUNIK ISKAL ZENITH DELAP ECKOS <br>
+                        [A330 / A350 / B787 / B777 / MD-11] <br>
+                        <img src="Routen/Route17.png" alt="Route 17">
+                    </div>
+                    <div class="Route18">
+                        <b>GCLP ✈︎ EFKT:</b> <br>
+                        ECKOS KOPUD LUNIK MEROS BRAVO SUDIP ROBUX <br>
+                        [A330 / A350 / B787 / B777 / MD-11] <br>
+                        <img src="Routen/Route18.png" alt="Route 18">
+                    </div>
+                    <div class="Route19">
+                        <b>EFKT ✈︎ LEMH:</b> <br>
+                        KITTL DELTA ROSE MINTY KUNAV SENOT MORSS MNH61 MNH76 MNH31 CARME CAT <br>
+                        [A330 / A350 / B787 / B777 / MD-11] <br>
+                        <img src="Routen/Route19.png" alt="Route 19">
+                    </div>
+                    <div class="Route20">
+                        <b>LEMH ✈︎ EFKT:</b> <br>
+                        TIMOR MEROS KONAN BRAVO SUDIP ROBUX <br>
+                        [A330 / A350 / B787 / B777 / MD-11] <br>
+                        <img src="Routen/Route20.png" alt="Route 20">
+                    </div>
+                </div>
+            </div>
+            <div class="short">
+                <h3><output id="route3"></output> Kurzstrecke <output id="route3-2"></output></h3>
+                <div class="short2">
+                    <div class="Route21">
+                        <b>MDPC ✈︎ GCLP:</b> <br>
+                        MAROG PC101 KATOK BETIR DRANO <br>
+                        [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
+                        <img src="Routen/Route21.png" alt="Route 21">
+                    </div>
+                    <div class="Route22">
+                        <b>GCLP ✈︎ MDPC:</b> <br>
+                        DRANO ODEGI PC112 PC115 PC113 BEREL <br>
+                        [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
+                        <img src="Routen/Route22.png" alt="Route 22">
+                    </div>
+                    <div class="Route23">
+                        <b>MDPC ✈︎ MDST:</b> <br>
+                        MAROG PC101 PC102 PC113 <br>
+                        [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
+                        <img src="Routen/Route23.png" alt="Route 23">
+                    </div>
+                    <div class="Route24">
+                        <b>MDST ✈︎ MDPC:</b> <br>
+                        PC113 BEREL <br>
+                        [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
+                        <img src="Routen/Route24.png" alt="Route 24">
+                    </div>
+                    <div class="Route25">
+                        <b>GCLP ✈︎ EGKK:</b> <br>
+                        ECKOS KOPUD ISKAL TELTU HAZEL <br>
+                        [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
+                        <img src="Routen/Route25.png" alt="Route 25">
+                    </div>
+                    <div class="Route26">
+                        <b>EGKK ✈︎ GCLP:</b> <br>
+                        HAZEL NOVMA SERVUS LIZAD DELAP ECKOS <br>
+                        [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
+                        <img src="Routen/Route26.png" alt="Route 26">
+                    </div>
+                    <div class="Route27">
+                        <b>GCLP ✈︎ LEMH:</b> <br>
+                        ECKOS COSTI SYOL4 CARME CAT <br>
+                        [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
+                        <img src="Routen/Route27.png" alt="Route 27">
+                    </div>
+                    <div class="Route28">
+                        <b>LEMH ✈︎ GCLP:</b> <br>
+                        TIMOR LUNIK ISKAL BRICK DELAP ECKOS <br>
+                        [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
+                        <img src="Routen/Route28.png" alt="Route 28">
+                    </div>
+                    <div class="Route29">
+                        <b>GCLP ✈︎ EGHI:</b> <br>
+                        ECKOS KOPUD ISKAL BOGNA <br>
+                        [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
+                        <img src="Routen/Route29.png" alt="Route 29">
+                    </div>
+                    <div class="Route30">
+                        <b>EGHI ✈︎ GCLP:</b> <br>
+                        BOGNA LIZAD BRICK DELAP ECKOS <br>
+                        [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
+                        <img src="Routen/Route30.png" alt="Route 30">
+                    </div>
+                    <div class="Route31">
+                        <b>LEMH ✈︎ LYTV:</b> <br>
+                        TIMOR SENOT OXY NEON EROVA BABY GOSUT <br>
+                        [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
+                        <img src="Routen/Route31.png" alt="Route 31">
+                    </div>
+                    <div class="Route32">
+                        <b>LYTV ✈︎ LEMH:</b> <br>
+                        GOSUT STAR NIK MNH76 MNH31 CARME CAT<br>
+                        [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
+                        <img src="Routen/Route32.png" alt="Route 32">
+                    </div>
+                    <div class="Route33">
+                        <b>LEMH ✈︎ EGKK:</b> <br>
+                        TIMOR SARGO KUNAV WIZAD TUNBY TEBRA <br>
+                        [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
+                        <img src="Routen/Route33.png" alt="Route 33">
+                    </div>
+                    <div class="Route34">
+                        <b>EGKK ✈︎ LEMH:</b> <br>
+                        HAZEL WILLO DISVO ISKAL OPERA CDP63 CDP75 CARME CAT<br>
+                        [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
+                        <img src="Routen/Route34.png" alt="Route 34">
+                    </div>
+                    <div class="Route35">
+                        <b>LEMH ✈︎ EGHI:</b> <br>
+                        TIMOR LUNIK ISKAL BOGNA <br>
+                        [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
+                        <img src="Routen/Route35.png" alt="Route 35">
+                    </div>
+                    <div class="Route36">
+                        <b>EGHI ✈︎ LEMH:</b> <br>
+                        BOGNA ISKAL OPERA CDP63 CDP75 CARME CAT <br>
+                        [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
+                        <img src="Routen/Route36.png" alt="Route 36">
+                    </div>
+                    <div class="Route37">
+                        <b>EGKK ✈︎ EFKT:</b> <br>
+                        HAZEL WILLO HOLLY WIZAD KONAN BRAVO SUDIP ROBUX <br>
+                        [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
+                        <img src="Routen/Route37.png" alt="Route 37">
+                    </div>
+                    <div class="Route38">
+                        <b>EFKT ✈︎ EGKK:</b> <br>
+                        KITTL DELTA ROSE FRANE TEBRA <br>
+                        [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
+                        <img src="Routen/Route38.png" alt="Route 38">
+                    </div>
+                </div>
             </div>
         </div>
+        
         <div class="lufthansagroup">
-            <h2>Lufthansa Group</h2>
+            <h2><output id="route4"></output> Lufthansa Goup <output id="route4-2"></output></h2>
             <div class="Lufthansagroup">
                 <p>Man darf nur mit Airlines von der Lufthansa Group fliegen, weil wir Lufthansa Virtual sind und das Flugerlebnis möglichst realistisch in unserer virtuelen Airline gestalten möchten. Aus diesem Grund bitten wir dich nur Airlines von der Lufthansa Group zu fliegen.</p>
                 Zur Lufthansa Group gehören: <br>
@@ -71,238 +307,22 @@
                 - Air Dolomiti <br>
             </div>
         </div>
-        <div class="allerouten">
-            <h2>Routen und Flugpläne</h2>
-            <h3>Langstrecke:</h3>
-            <div class="Route1">
-                <b>MDST ✈︎ EFKT:</b> <br>
-                PIXAR FALCON ROGER SARGO MEROS BRAVO SUDIP ROBUX <br>
-                [A330 / B787] <br>
-                <img src="Routen/Route1.png" alt="Route 1">
-            </div>
-            <div class="Route2">
-                <b>EFKT ✈︎ MDST:</b> <br>
-                KITTL DELTA ROSE MINTY LUNIK CDP63 VAXRI PC112 PC102 <br>
-                [A330 / B787]<br>
-                <img src="Routen/Route2.png" alt="Route 2">
-            </div>
-            <div class="Route3">
-                <b>MDPC ✈︎ EFKT:</b> <br>
-                MAROG PC101 KATOK JELLY CARME UBER BRAVO SUDIP ROBUX <br>
-                [A330 / B787] <br>
-                <img src="Routen/Route3.png" alt="Route 3">
-            </div>
-            <div class="Route4">
-                <b>EFKT ✈︎ MDPC:</b> <br>
-                KITTL DELTA ROSE MINTY LUNIK CDP63 BETIR PC115 PC113 BEREL <br>
-                [A330 / B787] <br>
-                <img src="Routen/Route4.png" alt="Route 4">
-            </div>
-            <h3>Mittelstrecke:</h3>
-            <div class="Route5">
-                <b>MDPC ✈︎ EGKK:</b> <br>
-                MAROG PC101 PC102 PC114 CHUMA FALCON ROGER NOVMA HAZEL <br>
-                [A330 / A350 / B787 / B777 / MD-11] <br>
-                <img src="Routen/Route5.png" alt="Route 5">
-            </div>
-            <div class="Route6">
-                <b>EGKK ✈︎ MDPC:</b> <br>
-                HAZEL WILLO TELTU ROGER FALCON POKEG PC115 PC113 BEREL <br>
-                [A330 / A350 / B787 / B777 / MD-11] <br>
-                <img src="Routen/Route6.png" alt="Route 6">
-            </div>
-            <div class="Route7">
-                <b>MDPC ✈︎ LEHM:</b> <br>
-                MAROG PC101 KATOK JELLY SYOL4 CARME CAT <br>
-                [A330 / A350 / B787 / B777 / MD-11] <br>
-                <img src="Routen/Route7.png" alt="Route 7">
-            </div>
-            <div class="Route8">
-                <b>LEHM ✈︎ MDPC:</b> <br>
-                TIMOR LUNIK ISKAL DICEY BETIR PC115 PC113 BEREL <br>
-                [A330 / A350 / B787 / B777 / MD-11] <br>
-                <img src="Routen/Route8.png" alt="Route 8">
-            </div>
-            <div class="Route9">
-                <b>MDPC ✈︎ LYTV:</b> <br>
-                MAROG PC101 KATOK VAXRI NAPEV ULTRA BABY GOSUT <br>
-                [A330 / B787 / MD-11] <br>
-                <img src="Routen/Route9.png" alt="Route 9">
-            </div>
-            <div class="Route10">
-                <b>LYTV ✈︎ MDPC:</b> <br>
-                TIVTI DEALT NAPEV ANTEX PC112 PC115 PC113 BEREL <br>
-                [A330 / B787 / MD-11] <br>
-                <img src="Routen/Route10.png" alt="Route 10">
-            </div>
-            <div class="Route11">
-                <b>LYTV ✈︎ EGKK:</b> <br>
-                GOSUT STAR NIK OLIVU MNH61 MEROS MINTY DETLING TEBRA<br>
-                [A330 / B787 / MD-11] <br>
-                <img src="Routen/Route11.png" alt="Route 11">
-            </div>
-            <div class="Route12">
-                <b>EGKK ✈︎ LYTV:</b> <br>
-                HAZEL WILLO HOLLY KUNAV MEROS OXY NEON EROVA BABY GOSUT <br>
-                [A330 / B787 / MD-11] <br>
-                <img src="Routen/Route12.png" alt="Route 12">
-            </div>
-            <div class="Route13">
-                <b>LYTV ✈︎ EFKT:</b> <br>
-                TIVTI OKLA MAMOL DESOL EFLA BRAVO SUDIP ROBUX <br>
-                [A330 / B787 / MD-11] <br>
-                <img src="Routen/Route13.png" alt="Route 13">
-            </div>
-            <div class="Route14">
-                <b>EFKT ✈︎ LYTV:</b> <br>
-                KITTL DELTA ROSE KONAN OXY NEON EROVA BABY GOSUT <br>
-                [A330 / B787 / MD-11] <br>
-                <img src="Routen/Route14.png" alt="Route 14">
-            </div>
-            <div class="Route15">
-                <b>LYTV ✈︎ GCLP:</b> <br>
-                GOSUT STAR NIK OLIVU MORSS SENOT OPERA KOPUD DELAP ECKOS<br>
-                [A330 / B787 / MD-11] <br>
-                <img src="Routen/Route15.png" alt="Route 15">
-            </div>
-            <div class="Route16">
-                <b>GCLP ✈︎ LYTV:</b> <br>
-                DRANO BANZAI VAXRI NAPEV ULTRA BABY GOSUT <br>
-                [A330 / B787 / MD-11] <br>
-                <img src="Routen/Route16.png" alt="Route 16">
-            </div>
-            <div class="Route17">
-                <b>EFKT ✈︎ GCLP:</b> <br>
-                KITTL DELTA ROSE MINTY KUNAV LUNIK ISKAL ZENITH DELAP ECKOS <br>
-                [A330 / A350 / B787 / B777 / MD-11] <br>
-                <img src="Routen/Route17.png" alt="Route 17">
-            </div>
-            <div class="Route18">
-                <b>GCLP ✈︎ EFKT:</b> <br>
-                ECKOS KOPUD LUNIK MEROS BRAVO SUDIP ROBUX <br>
-                [A330 / A350 / B787 / B777 / MD-11] <br>
-                <img src="Routen/Route18.png" alt="Route 18">
-            </div>
-            <div class="Route19">
-                <b>EFKT ✈︎ LEMH:</b> <br>
-                KITTL DELTA ROSE MINTY KUNAV SENOT MORSS MNH61 MNH76 MNH31 CARME CAT <br>
-                [A330 / A350 / B787 / B777 / MD-11] <br>
-                <img src="Routen/Route19.png" alt="Route 19">
-            </div>
-            <div class="Route20">
-                <b>LEMH ✈︎ EFKT:</b> <br>
-                TIMOR MEROS KONAN BRAVO SUDIP ROBUX <br>
-                [A330 / A350 / B787 / B777 / MD-11] <br>
-                <img src="Routen/Route20.png" alt="Route 20">
-            </div>
-            <h3>Kurzstrecke:</h3>
-            <div class="Route21">
-                <b>MDPC ✈︎ GCLP:</b> <br>
-                MAROG PC101 KATOK BETIR DRANO <br>
-                [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
-                <img src="Routen/Route21.png" alt="Route 21">
-            </div>
-            <div class="Route22">
-                <b>GCLP ✈︎ MDPC:</b> <br>
-                DRANO ODEGI PC112 PC115 PC113 BEREL <br>
-                [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
-                <img src="Routen/Route22.png" alt="Route 22">
-            </div>
-            <div class="Route23">
-                <b>MDPC ✈︎ MDST:</b> <br>
-                MAROG PC101 PC102 PC113 <br>
-                [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
-                <img src="Routen/Route23.png" alt="Route 23">
-            </div>
-            <div class="Route24">
-                <b>MDST ✈︎ MDPC:</b> <br>
-                PC113 BEREL <br>
-                [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
-                <img src="Routen/Route24.png" alt="Route 24">
-            </div>
-            <div class="Route25">
-                <b>GCLP ✈︎ EGKK:</b> <br>
-                ECKOS KOPUD ISKAL TELTU HAZEL <br>
-                [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
-                <img src="Routen/Route25.png" alt="Route 25">
-            </div>
-            <div class="Route26">
-                <b>EGKK ✈︎ GCLP:</b> <br>
-                HAZEL NOVMA SERVUS LIZAD DELAP ECKOS <br>
-                [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
-                <img src="Routen/Route26.png" alt="Route 26">
-            </div>
-            <div class="Route27">
-                <b>GCLP ✈︎ LEMH:</b> <br>
-                ECKOS COSTI SYOL4 CARME CAT <br>
-                [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
-                <img src="Routen/Route27.png" alt="Route 27">
-            </div>
-            <div class="Route28">
-                <b>LEMH ✈︎ GCLP:</b> <br>
-                TIMOR LUNIK ISKAL BRICK DELAP ECKOS <br>
-                [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
-                <img src="Routen/Route28.png" alt="Route 28">
-            </div>
-            <div class="Route29">
-                <b>GCLP ✈︎ EGHI:</b> <br>
-                ECKOS KOPUD ISKAL BOGNA <br>
-                [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
-                <img src="Routen/Route29.png" alt="Route 29">
-            </div>
-            <div class="Route30">
-                <b>EGHI ✈︎ GCLP:</b> <br>
-                BOGNA LIZAD BRICK DELAP ECKOS <br>
-                [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
-                <img src="Routen/Route30.png" alt="Route 30">
-            </div>
-            <div class="Route31">
-                <b>LEMH ✈︎ LYTV:</b> <br>
-                TIMOR SENOT OXY NEON EROVA BABY GOSUT <br>
-                [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
-                <img src="Routen/Route31.png" alt="Route 31">
-            </div>
-            <div class="Route32">
-                <b>LYTV ✈︎ LEMH:</b> <br>
-                GOSUT STAR NIK MNH76 MNH31 CARME CAT<br>
-                [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
-                <img src="Routen/Route32.png" alt="Route 32">
-            </div>
-            <div class="Route33">
-                <b>LEMH ✈︎ EGKK:</b> <br>
-                TIMOR SARGO KUNAV WIZAD TUNBY TEBRA <br>
-                [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
-                <img src="Routen/Route33.png" alt="Route 33">
-            </div>
-            <div class="Route34">
-                <b>EGKK ✈︎ LEMH:</b> <br>
-                HAZEL WILLO DISVO ISKAL OPERA CDP63 CDP75 CARME CAT<br>
-                [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
-                <img src="Routen/Route34.png" alt="Route 34">
-            </div>
-            <div class="Route35">
-                <b>LEMH ✈︎ EGHI:</b> <br>
-                TIMOR LUNIK ISKAL BOGNA <br>
-                [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
-                <img src="Routen/Route35.png" alt="Route 35">
-            </div>
-            <div class="Route36">
-                <b>EGHI ✈︎ LEMH:</b> <br>
-                BOGNA ISKAL OPERA CDP63 CDP75 CARME CAT <br>
-                [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
-                <img src="Routen/Route36.png" alt="Route 36">
-            </div>
-            <div class="Route37">
-                <b>EGKK ✈︎ EFKT:</b> <br>
-                HAZEL WILLO HOLLY WIZAD KONAN BRAVO SUDIP ROBUX <br>
-                [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
-                <img src="Routen/Route37.png" alt="Route 37">
-            </div>
-            <div class="Route38">
-                <b>EFKT ✈︎ EGKK:</b> <br>
-                KITTL DELTA ROSE FRANE TEBRA <br>
-                [A220 / A320 / B717 / B727 / B737 / Fokker 100] <br>
-                <img src="Routen/Route38.png" alt="Route 38">
+        
+        <div class="aeropoints">
+            <h2><output id="route5"></output> Aeropoints <output id="route5-2"></output></h2>
+            <div class="Aeropoints">
+                <p>Für jeden deine Flug, welches du mit einer der vorgegebenen Route, einem der vorgegeben Flugzeuge und einer der Airlines der Lufthansa Group fliegst und es <a href="https://docs.google.com/forms/d/e/1FAIpQLSeFIL7xpBnlCHS0clxO5JMr7N0GqJjfXCg_miIe928MPb3HjQ/viewform"><b>AUF DIESER WEBSITE</b></a> einträgst bekommst du Aeropints. Man bekommt sie auch wenn man in einem Event gewonnen hat. Du kannst auch alle von dir und auch anderen eingetragene Flüge und wie viele Punkte dafür gegeben waren <a href="https://docs.google.com/spreadsheets/d/1wn1r2uznQdqtVCvjGCeYQOGfB50SlmEoi0N3FT7ueDE/edit?gid=9757994#gid=9757994"><b>AUF DIESER WEBSITE</b></a> sehen.</p>
+                <p>Wie viele Punkte du bekommst hängt davon ab welche Route du geflogen bist und ob du den vorgegebenen Flugplan benutzt hast. So werden die Punkte berechnet:</p>
+                - Langstrecke: 75 + 15 mit Flugplan <br>
+                - Mittelstrecke: 50 + 15 mit Flugplan <br>
+                - Kurzstrecke: 25 + 15 mit Flugplan <br> <br>
+                <p>Abhängig davon wie viele Aeropoints du hast, bekommst du auch andere Rollen auf unserem Discord Server. Das sind die Rollen und wie viele Punkte man dafür braucht:</p>
+                - 0-300: Trainee <br>
+                - 300-750: First Officer <br>
+                - 750-1200: Senior First Officer <br>
+                - 1200-2000: Captain <br>
+                - 2000-3000: Senior Captain <br>
+                - 3000+: VIP
             </div>
         </div>
     </div>

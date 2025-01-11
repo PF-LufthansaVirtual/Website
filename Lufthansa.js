@@ -388,4 +388,86 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('Route38-2').addEventListener('click', function() {
         imageresize("Route38-2");
     });
+    
+    
+    
+    var openroute1 = false
+    var openroute2 = false
+    var openroute3 = false
+    var openroute4 = false
+    var openroute5 = false
+    var noopen = false;
+    
+    function updateArrowfaq(arrow, openroutes) {
+        if(!openroutes) {
+            document.getElementById(`${arrow}`).textContent = "▼";
+            document.getElementById(`${arrow}-2`).textContent = "▼";
+        } else {
+            document.getElementById(`${arrow}`).textContent = "▲";
+            document.getElementById(`${arrow}-2`).textContent = "▲";
+        }
+    }
+    
+    updateArrowfaq("route1", openroute1)
+    updateArrowfaq("route2", openroute2)
+    updateArrowfaq("route3", openroute3)
+    updateArrowfaq("route4", openroute4)
+    updateArrowfaq("route5", openroute5)
+    
+    function routedisplay(route, arrow, openroutes) {
+        if(noopen === false) {
+            if(`${route}` === "long2") {
+                openroute1 = !openroute1;
+                openroutes = openroute1;
+            } else if(`${route}` === "middle2") {
+                openroute2 = !openroute2;
+                openroutes = openroute2;
+            } else if(`${route}` === "short2") {
+                openroute3 = !openroute3;
+                openroutes = openroute3;
+            } else if(`${route}` === "Lufthansagroup") {
+                openroute4 = !openroute4;
+                openroutes = openroute4;
+            } else if(`${route}` === "Aeropoints") {
+                openroute5 = !openroute5;
+                openroutes = openroute5;
+            }
+
+            updateArrowfaq(`${arrow}`, openroutes);
+
+            if(openroutes) {
+                document.querySelector(`.${route}`).style.display = "block";
+            } else {
+                document.querySelector(`.${route}`).style.display = "none";
+            }
+        } else {
+            noopen = false;
+        }
+    }
+    
+    document.querySelector('.long').addEventListener('click', function() {
+        routedisplay("long2", "route1", openroute1);
+    });
+    
+    document.querySelector('.middle').addEventListener('click', function() {
+        routedisplay("middle2", "route2", openroute2);
+    });
+    
+     document.querySelector('.short').addEventListener('click', function() {
+        routedisplay("short2", "route3", openroute3);
+    });
+    
+     document.querySelector('.lufthansagroup').addEventListener('click', function() {
+        routedisplay("Lufthansagroup", "route4", openroute4);
+    });
+    
+     document.querySelector('.aeropoints').addEventListener('click', function() {
+        routedisplay("Aeropoints", "route5", openroute5);
+    });
+    
+    for (let i = 1; i < 39; i++) {
+        document.querySelector(`.Route${i} img`).addEventListener('click', function() {
+            noopen = true;
+        });
+    }
 });
