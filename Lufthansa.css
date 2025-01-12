@@ -304,11 +304,10 @@ header {
     background-color: #000E27;
     border: 2px solid white;
     border-right: 0px solid white;
-    top: 50%;
+    top: 15%;
     right: 0%;
-    transform: translateY(-50%);
     border-radius: 2em 0.5em 0.5em 2em;
-    min-width: 195vh;
+    width: 95%;
     height: 80vh;
     text-align: center;
     overflow: auto;
@@ -330,16 +329,6 @@ header {
 .Routes::-webkit-scrollbar-track {
     background: #164068;
     border-radius: 10px;
-}
-
-.Startseite {
-    position: fixed;
-    background-color: #000E27;
-    transform: translateY(-100%);
-    border-right: 2px solid white;
-    border-top: 2px solid white;
-    border-radius: 0 1em 0 0;
-    padding: 0 30px;
 }
 
 .allerouten,
@@ -461,7 +450,8 @@ header {
 .Route38 img {
     position: absolute;
     height: 90px;
-    transform: translate(1015px, -73.5px);
+    right: 6%;
+    transform: translateY(-73.5px);
     border-radius: 0.5em 0.5em 0.5em 0.5em;
     cursor: pointer;
 }
@@ -597,7 +587,7 @@ header {
     }
     
     .dropdown:hover .dropdown-content-en {
-        transform: translate(-20%, 17%);
+        transform: translate(-20%, 15%);
     }
     
     .dropdown-content-de {
@@ -605,7 +595,7 @@ header {
     }
     
     .dropdown:hover .dropdown-content-de {
-        transform: translate(-15%, 17%);
+        transform: translate(-15%, 15%);
     }
     
     .image-text-left {
@@ -643,7 +633,7 @@ header {
     .Routes {
         min-width: 90%;
         height: 70vh;
-        transform: translateY(-45%);
+        top: 18%;
     }
     
     .Route1 img,

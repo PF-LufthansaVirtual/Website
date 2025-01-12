@@ -18,7 +18,11 @@ document.addEventListener("DOMContentLoaded", function() {
         updateArrow();
         
         if(open) {
-            document.querySelector('.lang-select').style.transform = "translateX(0)";
+            if (window.matchMedia("(max-width: 600px)").matches) {
+                document.querySelector('.lang-select').style.transform = "translateX(10%)";
+            } else {
+                document.querySelector('.lang-select').style.transform = "translateX(0)";
+            }
         } else {
             document.querySelector('.lang-select').style.transform = "translateX(-100%)";
         }
@@ -99,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
             openimg = image;
         } else if(openimg !== image){
             document.getElementById(`${openimg}`).style.display = "none"
-            
+
             document.getElementById(`${image}`).style.display = "block"
             openimg = image;
         } else if(openimg === image) {
@@ -437,33 +441,37 @@ document.addEventListener("DOMContentLoaded", function() {
     updateArrowfaq("route5", openroute5)
     
     function routedisplay(route, arrow, openroutes) {
-        if(noopen === false) {
-            if(`${route}` === "long2") {
-                openroute1 = !openroute1;
-                openroutes = openroute1;
-            } else if(`${route}` === "middle2") {
-                openroute2 = !openroute2;
-                openroutes = openroute2;
-            } else if(`${route}` === "short2") {
-                openroute3 = !openroute3;
-                openroutes = openroute3;
-            } else if(`${route}` === "Lufthansagroup") {
-                openroute4 = !openroute4;
-                openroutes = openroute4;
-            } else if(`${route}` === "Aeropoints") {
-                openroute5 = !openroute5;
-                openroutes = openroute5;
-            }
-
-            updateArrowfaq(`${arrow}`, openroutes);
-
-            if(openroutes) {
-                document.querySelector(`.${route}`).style.display = "block";
-            } else {
-                document.querySelector(`.${route}`).style.display = "none";
-            }
+        if (window.getSelection().toString().length > 0) {
+            return;
         } else {
-            noopen = false;
+            if(noopen === false) {
+                if(`${route}` === "long2") {
+                    openroute1 = !openroute1;
+                    openroutes = openroute1;
+                } else if(`${route}` === "middle2") {
+                    openroute2 = !openroute2;
+                    openroutes = openroute2;
+                } else if(`${route}` === "short2") {
+                    openroute3 = !openroute3;
+                    openroutes = openroute3;
+                } else if(`${route}` === "Lufthansagroup") {
+                    openroute4 = !openroute4;
+                    openroutes = openroute4;
+                } else if(`${route}` === "Aeropoints") {
+                    openroute5 = !openroute5;
+                    openroutes = openroute5;
+                }
+
+                updateArrowfaq(`${arrow}`, openroutes);
+
+                if(openroutes) {
+                    document.querySelector(`.${route}`).style.display = "block";
+                } else {
+                    document.querySelector(`.${route}`).style.display = "none";
+                }
+            } else {
+                noopen = false;
+            }
         }
     }
     
