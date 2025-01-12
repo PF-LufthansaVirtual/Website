@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
 </head>
 <body>
-  <h1>Willkommen auf deinem Dashboard!</h1>
-  <p id="user-info"></p>
-  <a href="/logout">Abmelden</a>
-  <a href="/shutdown">Shutdown</a>
-  <script>
+    <h1>Willkommen auf deinem Dashboard!</h1>
+    <p id="user-info"></p>
+    <a href="/logout">Abmelden</a>
+    <a href="/shutdown">Shutdown</a>
+    <script>
     fetch('/api/user')
-      .then(res => res.json())
-      .then(user => {
-        if (user.username) {
-          document.getElementById('user-info').innerText = `Hallo ${user.username}, ID: ${user.id}`;
-        } else {
-          window.location.href = '/';
-        }
-      })
-      .catch(() => {
-        window.location.href = '/';
-      });
-  </script>
+        .then(res => res.json())
+        .then(user => {
+            if (user.username) {
+                document.getElementById('user-info').innerText = `Hallo ${user.username}, ID: ${user.id}`;
+            } else {
+                window.location.href = '/';
+            }
+        })
+        .catch(() => {
+            window.location.href = '/';
+        });
+    </script>
 </body>
 </html>
+
