@@ -504,6 +504,116 @@ header {
     display: none;
 }
 
+.staffstuff {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 75vh;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000E27;
+    border-radius: 2em 2em 2em 2em;
+}
+
+.staffstuff img {
+    width: 800px;
+    border-radius: 1em 1em 1em 1em;
+}
+
+.design,
+.development,
+.marketing,
+.event {
+    width: 93.5%;
+    padding: 20px;
+    height: 70.5vh;
+}
+
+.development,
+.marketing,
+.event {
+    display: none;
+}
+
+.design {
+    border: 2px solid white;
+    border-radius: 2em 0 0 2em;
+}
+
+.development {
+    border: 2px solid white;
+    border-left: 0;
+}
+
+.marketing {
+    border: 2px solid white;
+    border-left: 0;
+}
+
+.event {
+    border: 2px solid white;
+    border-left: 0;
+    border-radius: 0 2em 2em 0;
+}
+
+.design2,
+.development2,
+.marketing2,
+.event2 {
+    width: 2.5%;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 0;
+    height: 70.5vh;
+    margin: 0;
+}
+
+.design2 {
+    display: none;
+}
+
+.design2 {
+    border: 2px solid white;
+    border-radius: 1em 0 0 1em;
+}
+
+.development2 {
+    border: 2px solid white;
+    border-left: 0;
+}
+
+.marketing2 {
+    border: 2px solid white;
+    border-left: 0;
+}
+
+.event2 {
+    border: 2px solid white;
+    border-left: 0;
+    border-radius: 0 1em 1em 0;
+}
+
+.code {
+    background-color: rgb(22, 24, 32);
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 1em 1em 1em 1em;
+    width: 800px;
+}
+
+.staffstuff a {
+    background-color: #10304E;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.staffstuff a:hover {
+    background-color: #164068;
+}
+
 
 
 

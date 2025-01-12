@@ -526,7 +526,39 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-   if (window.matchMedia("(max-width: 600px)").matches) {
+    if (window.matchMedia("(min-width: 601px)").matches) {
+        var openstaff = "design"
+        
+        function changestaff(staff) {
+            document.querySelector(`.${staff}`).style.display = "block";
+            document.querySelector(`.${staff}2`).style.display = "none";
+            document.querySelector(`.${openstaff}`).style.display = "none";
+            document.querySelector(`.${openstaff}2`).style.display = "block";
+            openstaff = staff;
+        }
+        
+        document.querySelector(".design2").addEventListener('click', function() {
+            changestaff("design") 
+        });
+        
+        document.querySelector(".development2").addEventListener('click', function() {
+            changestaff("development") 
+        });
+        
+        document.querySelector(".marketing2").addEventListener('click', function() {
+            changestaff("marketing") 
+        });
+        
+        document.querySelector(".event2").addEventListener('click', function() {
+            changestaff("event") 
+        });
+    }
+    
+    
+    
+    
+    
+    if (window.matchMedia("(max-width: 600px)").matches) {
         var openmenu = false
         
         document.querySelector(".menu").addEventListener('click', function() {
