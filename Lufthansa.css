@@ -583,7 +583,7 @@ header {
     }
     
     .dropdown-content-en {
-        transform: translate(125%, 17%);
+        transform: translate(125%, 16%);
     }
     
     .dropdown:hover .dropdown-content-en {
@@ -591,7 +591,7 @@ header {
     }
     
     .dropdown-content-de {
-        transform: translate(125%, 17%);
+        transform: translate(125%, 16%);
     }
     
     .dropdown:hover .dropdown-content-de {

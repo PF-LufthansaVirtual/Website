@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         if(open) {
             if (window.matchMedia("(max-width: 600px)").matches) {
-                document.querySelector('.lang-select').style.transform = "translateX(-10%)";
+                document.querySelector('.lang-select').style.transform = "translateX(-9%)";
             } else {
                 document.querySelector('.lang-select').style.transform = "translateX(0)";
             }
