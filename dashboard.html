@@ -11,19 +11,20 @@
     <a href="/logout">Abmelden</a>
     <a href="/shutdown">Shutdown</a>
     <script>
-    /*fetch('/api/user')
-        .then(res => res.json())
-        .then(user => {
-            if (user.username) {
-                document.getElementById('user-info').innerText = `Hallo ${user.username}, ID: ${user.id}`;
-            } else {
+        // Benutzerinformationen vom Server abrufen
+        fetch('/api/user')
+            .then((res) => {
+                if (res.ok) return res.json();
+                // Benutzer ist nicht eingeloggt
                 window.location.href = '/';
-            }
-        })
-        .catch(() => {
-            window.location.href = '/';
-        });*/
+            })
+            .then((user) => {
+                document.getElementById('user-info').innerText = `Hallo ${user.username}, ID: ${user.id}`;
+            })
+            .catch(() => {
+                // Fehler bei der API-Anfrage
+                window.location.href = '/';
+            });
     </script>
 </body>
 </html>
-
