@@ -18,8 +18,8 @@
                 <span>🌐 EN <output id="arrow"></output> </span>
             </div>
             <div class="lang-select">
-                <a id="lang-en" href="index.html"> <b> EN </b> </a>
-                <div class="langfix"><a id="lang-de" href="Lufthansa_de.html"> DE </a></div>
+                <a id="lang-en"> EN </a>
+                <div class="langfix"><a id="lang-de"> DE </a></div>
             </div>
         </div>
         <div class="menu">
@@ -27,34 +27,34 @@
         </div>
         <div class="menustuff">
             <div class="Routesdash">
-                <a id="lang-en" href="Lufthansa_Routes_en.html"> <h3>Routes</h3> </a>
+                <h3><a id=t_routes href="Lufthansa_Routes_en.html"> </a></h3>
             </div>
             <div class="Staffdash">
-                <a id="lang-en" href="Lufthansa_staff_en.html"> <h3>Staff</h3> </a>
+                <h3><a id=t_staff href="Lufthansa_staff_en.html"> </a></h3>
             </div>
             <div class="discord">
-                <a href="http://localhost:3000/login"> <h3>log in with Discord</h3> </a>
+                <h3><a id=t_login href="http://localhost:3000/login"> </a></h3>
             </div>
         </div>
         <div class="dropdown">
             <span id="partteam">Be Part of the Team</span>
             <div class="dropdown-content-en">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSesMAKSHGJMNtVgYfb6nnW7LXNpK6BTaaWSEzwZqWbco8Yo0A/viewform">Event Team</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeEjqyAYE_U2trfr6xbWK-w6fzvlNFkXvVO_mZVJkSLqjL5zg/viewform">Design Team</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtNszewCz3h6LdP7lUprAtxiQSTTKeakzgHBtD2In5gVbv4w/viewform">Marketing Team</a>
-                <div class="dropdownfix"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfjzGo1na6-H8x1bPecckv-fNaZCRtMU9btfaswOIjPOzfbPA/viewform">Development Team</a></div>
+                <a id="t_event" href="https://docs.google.com/forms/d/e/1FAIpQLSesMAKSHGJMNtVgYfb6nnW7LXNpK6BTaaWSEzwZqWbco8Yo0A/viewform">Event Team</a>
+                <a id="t_design" href="https://docs.google.com/forms/d/e/1FAIpQLSeEjqyAYE_U2trfr6xbWK-w6fzvlNFkXvVO_mZVJkSLqjL5zg/viewform">Design Team</a>
+                <a id="t_marketing" href="https://docs.google.com/forms/d/e/1FAIpQLSdtNszewCz3h6LdP7lUprAtxiQSTTKeakzgHBtD2In5gVbv4w/viewform">Marketing Team</a>
+                <div class="dropdownfix"><a id="t_dev" href="https://docs.google.com/forms/d/e/1FAIpQLSfjzGo1na6-H8x1bPecckv-fNaZCRtMU9btfaswOIjPOzfbPA/viewform">Development Team</a></div>
             </div>
         </div>
     </header>
 
     <!-- Hintergrundbild mit JOIN NOW Button -->
     <div class="hero">
-        <button class="join-button" onclick="window.location.href='https://discord.gg/fz923z2BgP'">JOIN NOW</button>
+        <button id=join class="join-button" onclick="window.location.href='https://discord.gg/fz923z2BgP'"></button>
     </div>
     
     <div class="black-section">
         <div class="infos">
-            <h1>↓ More infos ↓</h1>
+            <h1 id=t_infos> </h1>
         </div>
         
         <div class="image-text-left">
@@ -142,5 +142,6 @@
     </div>
 
 </body>
-<script src="Lufthansa.js"></script>
 </html>
+<script src="JavaScript/Lufthansa.js"></script>
+<script src="JavaScript/translations.js"></script>
