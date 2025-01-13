@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
             join: "JOIN NOW",
             t_routes: "Routes",
             t_staff: "Staff",
-            t_login: "Log in with Discord (Pre Alpha)",
+            t_login: "Log in with Discord (Pre Alpha, Not Working)",
             partteam: "Be Part of the Team",
             t_event: "Event Team",
             t_design: "Design Team",
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
             join: "JETZT BEITRETEN",
             t_routes: "Routen",
             t_staff: "Mitarbeiter",
-            t_login: "Mit Discord anmelden (Pre Alpha)",
+            t_login: "Mit Discord anmelden (Pre Alpha, Nicht funktionstüchtig)",
             partteam: "Sei Teil unseres Teams",
             t_event: "Event Team",
             t_design: "Design Team",
@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
             langde.classList.add('bold');
             langen.classList.remove('bold');
         }
+        saveLanguage(language);
         const texts = translations[language];
         //document.getElementById('').textContent = texts.;
         document.getElementById('join').textContent = texts.join;
@@ -50,8 +51,21 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('t_infos').textContent = texts.t_infos;
     
     }
+    
+    function saveLanguage(language) {
+        localStorage.setItem("lang", language);
+    }
 
-    setLanguage('en');
+    function loadLanguage() {
+        var language = localStorage.getItem("lang");
+        if (language == null) {
+            setLanguage("en");
+        }else {
+            setLanguage(language);
+        }
+    }
+    
+    loadLanguage();
 
     document.getElementById('lang-en').addEventListener('click', function() {
         setLanguage('en');
