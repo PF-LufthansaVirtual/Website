@@ -495,123 +495,126 @@ header {
 #Route37-2,
 #Route38-2 {
     position: fixed;
-    height: 600px;
+    height: 700px;
     border-radius: 2em 2em 2em 2em;
     cursor: pointer;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
 }
 
-.staffstuff {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    width: 95%;
-    height: 75vh;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #000E27;
-    border-radius: 2em 2em 2em 2em;
-}
 
-.staffstuff img {
-    width: 800px;
-    border-radius: 1em 1em 1em 1em;
-}
+@media only screen and (min-width: 601px) {
+    .staffstuff {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 95%;
+        height: 75vh;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #000E27;
+        border-radius: 2em 2em 2em 2em;
+    }
 
-.design,
-.development,
-.marketing,
-.event {
-    width: 93.5%;
-    padding: 20px;
-    height: 70.5vh;
-}
+    .staffstuff img {
+        width: 800px;
+        border-radius: 1em 1em 1em 1em;
+    }
 
-.development,
-.marketing,
-.event {
-    display: none;
-}
+    .design,
+    .development,
+    .marketing,
+    .event {
+        width: 93.5%;
+        padding: 20px;
+        height: 70.5vh;
+    }
 
-.design {
-    border: 2px solid white;
-    border-radius: 2em 0 0 2em;
-}
+    .development,
+    .marketing,
+    .event {
+        display: none;
+    }
 
-.development {
-    border: 2px solid white;
-    border-left: 0;
-}
+    .design {
+        border: 2px solid white;
+        border-radius: 2em 0 0 2em;
+    }
 
-.marketing {
-    border: 2px solid white;
-    border-left: 0;
-}
+    .development {
+        border: 2px solid white;
+        border-left: 0;
+    }
 
-.event {
-    border: 2px solid white;
-    border-left: 0;
-    border-radius: 0 2em 2em 0;
-}
+    .marketing {
+        border: 2px solid white;
+        border-left: 0;
+    }
 
-.design2,
-.development2,
-.marketing2,
-.event2 {
-    width: 2.5%;
-    padding: 20px;
-    padding-top: 40px;
-    padding-bottom: 0;
-    height: 70.5vh;
-    margin: 0;
-}
+    .event {
+        border: 2px solid white;
+        border-left: 0;
+        border-radius: 0 2em 2em 0;
+    }
 
-.design2 {
-    display: none;
-}
+    .design2,
+    .development2,
+    .marketing2,
+    .event2 {
+        width: 2.5%;
+        padding: 20px;
+        padding-top: 40px;
+        padding-bottom: 0;
+        height: 70.5vh;
+        margin: 0;
+    }
 
-.design2 {
-    border: 2px solid white;
-    border-radius: 1em 0 0 1em;
-}
+    .design2 {
+        display: none;
+    }
 
-.development2 {
-    border: 2px solid white;
-    border-left: 0;
-}
+    .design2 {
+        border: 2px solid white;
+        border-radius: 1em 0 0 1em;
+    }
 
-.marketing2 {
-    border: 2px solid white;
-    border-left: 0;
-}
+    .development2 {
+        border: 2px solid white;
+        border-left: 0;
+    }
 
-.event2 {
-    border: 2px solid white;
-    border-left: 0;
-    border-radius: 0 1em 1em 0;
-}
+    .marketing2 {
+        border: 2px solid white;
+        border-left: 0;
+    }
 
-.code {
-    background-color: rgb(22, 24, 32);
-    font-size: 18px;
-    padding: 20px;
-    border-radius: 1em 1em 1em 1em;
-    width: 800px;
-}
+    .event2 {
+        border: 2px solid white;
+        border-left: 0;
+        border-radius: 0 1em 1em 0;
+    }
 
-.staffstuff a {
-    background-color: #10304E;
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 0.5em 0.5em 0.5em 0.5em;
-}
+    .code {
+        background-color: rgb(22, 24, 32);
+        font-size: 18px;
+        padding: 20px;
+        border-radius: 1em 1em 1em 1em;
+        width: 800px;
+    }
 
-.staffstuff a:hover {
-    background-color: #164068;
+    .staffstuff a {
+        background-color: #10304E;
+        padding: 15px;
+        margin-top: 20px;
+        border-radius: 0.5em 0.5em 0.5em 0.5em;
+    }
+
+    .staffstuff a:hover {
+        background-color: #164068;
+    }
 }
 
 
@@ -828,5 +831,9 @@ header {
     #Route38-2 {
         width: 100%;
         height: auto;
+    }
+    
+    .staffstuff {
+        
     }
 }
