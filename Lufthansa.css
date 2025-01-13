@@ -195,6 +195,7 @@ header {
     height: 100vh;
     display: flex;
     justify-content: center;
+    background-attachment: fixed;
 }
 
 /* Abschnitt mit schwarzem Hintergrund */
@@ -834,6 +835,50 @@ header {
     }
     
     .staffstuff {
-        
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+        top: 15%;
+        overflow: scroll;
+    }
+    
+    .design,
+    .development,
+    .marketing,
+    .event {
+        background-color: #000E27;
+        padding: 20px;
+        padding-bottom: 40px;
+        width: 80%;
+        margin: 20px;
+        border-radius: 2em 2em 2em 2em;
+        border: 2px solid white;
+    }
+    
+    .code {
+        background-color: rgb(22, 24, 32);
+        font-size: 18px;
+        padding: 20px;
+        border-radius: 1em 1em 1em 1em;
+        width: 90%;
+    }
+    
+    .staffstuff img {
+        width: 100%;
+        border-radius: 1em 1em 1em 1em;
+    }
+    
+    .staffstuff a {
+        background-color: #10304E;
+        padding: 15px;
+        border-radius: 0.5em 0.5em 0.5em 0.5em;
+    }
+    
+    .design2,
+    .development2,
+    .marketing2,
+    .event2 {
+        display: none;
     }
 }
