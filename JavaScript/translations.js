@@ -110,16 +110,15 @@ document.addEventListener("DOMContentLoaded", function() {
             
             if(dropdown_de){
                 dropdown_de.id = 'dropdown-content-en';
-            } else {
-                dropdown_en.id = 'dropdown-content-en';
             }
         }else if(lang == 'de') {
             langde.classList.add('bold');
             langen.classList.remove('bold');
             document.getElementById('langsel').textContent = "🌐 DE ";
             
-            dropdown_en.id = 'dropdown-content-de';
-            document.getElementById('dropdown-content-en').id = 'dropdown-content-de';
+            if(dropdown_en){
+                dropdown_en.id = 'dropdown-content-de';
+            }
         }
         saveLanguage(lang);
         
