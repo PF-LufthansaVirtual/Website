@@ -117,9 +117,7 @@ document.addEventListener("DOMContentLoaded", function() {
             langde.classList.add('bold');
             langen.classList.remove('bold');
             document.getElementById('langsel').textContent = "🌐 DE ";
-            document.getElementById('dropdown-content-en').id = 'dropdown-content-de';
-            dropdown_en.id = 'dropdown-content-de';
-            document.getElementById('dropdown-content-en').id = 'dropdown-content-de';
+            
             dropdown_en.id = 'dropdown-content-de';
             document.getElementById('dropdown-content-en').id = 'dropdown-content-de';
         }
