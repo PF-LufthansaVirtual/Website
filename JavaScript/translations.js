@@ -101,21 +101,31 @@ document.addEventListener("DOMContentLoaded", function() {
     function setLanguage(lang) {
         var langen = document.getElementById('lang-en');
         var langde = document.getElementById('lang-de');
+        var dropdown_en = document.getElementById('dropdown-content-en')
+        var dropdown_de = document.getElementById('dropdown-content-de')
         if(lang == 'en') {
             langen.classList.add('bold');
             langde.classList.remove('bold');
             document.getElementById('langsel').textContent = "🌐 EN ";
+            
+            if(dropdown_de){
+                dropdown_de.id = 'dropdown-content-en';
+            } else {
+                dropdown_en.id = 'dropdown-content-en'
+            }
         }else if(lang == 'de') {
             langde.classList.add('bold');
             langen.classList.remove('bold');
             document.getElementById('langsel').textContent = "🌐 DE ";
+            
+            
+            dropdown_en.id = 'dropdown-content-de';
         }
         saveLanguage(lang);
         
         const elements = document.querySelectorAll("[id^='t_'], #join");
         elements.forEach((el) => {
             const key = el.id;
-            console.log(key)
             if (translations[lang][key]) {
                 el.textContent = translations[lang][key];
             }
