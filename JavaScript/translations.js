@@ -101,8 +101,8 @@ document.addEventListener("DOMContentLoaded", function() {
     function setLanguage(lang) {
         var langen = document.getElementById('lang-en');
         var langde = document.getElementById('lang-de');
-        var dropdown_en = document.getElementById('dropdown-content-en')
-        var dropdown_de = document.getElementById('dropdown-content-de')
+        var dropdown_en = document.getElementById('dropdown-content-en');
+        var dropdown_de = document.getElementById('dropdown-content-de');
         if(lang == 'en') {
             langen.classList.add('bold');
             langde.classList.remove('bold');
@@ -111,14 +111,14 @@ document.addEventListener("DOMContentLoaded", function() {
             if(dropdown_de){
                 dropdown_de.id = 'dropdown-content-en';
             } else {
-                dropdown_en.id = 'dropdown-content-en'
+                dropdown_en.id = 'dropdown-content-en';
             }
         }else if(lang == 'de') {
             langde.classList.add('bold');
             langen.classList.remove('bold');
             document.getElementById('langsel').textContent = "🌐 DE ";
-            
-            
+            document.getElementById('dropdown-content-en').id = 'dropdown-content-de';
+            dropdown_en.id = 'dropdown-content-de';
             document.getElementById('dropdown-content-en').id = 'dropdown-content-de';
         }
         saveLanguage(lang);
