@@ -633,6 +633,10 @@ header {
         padding-right: 0;
     }
     
+    .hero {
+        height: 81.5vh;
+    }
+    
     /* Profilbild */
     #logo {
         margin-right: 0px;
@@ -656,6 +660,10 @@ header {
         border-right: 2px solid white;
         border-radius: 0 0 1em 0;
         cursor: pointer;
+    }
+    
+    .language-select {
+        width: 70px;
     }
     
     .menu {
@@ -709,11 +717,11 @@ header {
     }
     
     #dropdown-content-de {
-        transform: translate(125%, 16%);
+        transform: translate(125%, 17%);
     }
     
     .dropdown:hover #dropdown-content-de {
-        transform: translate(-15%, 16%);
+        transform: translate(-15%, 17%);
     }
     
     .image-text-left {
@@ -721,7 +729,7 @@ header {
     }
 
     .image-text-left img {
-        width: 90%;
+        width: 95%;
     }
 
     .image-text-left .text {

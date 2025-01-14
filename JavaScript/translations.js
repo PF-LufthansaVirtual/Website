@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('langsel').textContent = "🌐 DE ";
             
             
-            dropdown_en.id = 'dropdown-content-de';
+            document.getElementById('dropdown-content-en').id = 'dropdown-content-de';
         }
         saveLanguage(lang);
         
