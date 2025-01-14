@@ -1,18 +1,6 @@
 var document;
 
 document.addEventListener("DOMContentLoaded", function() {
-    var open = false;
-    
-    function updateArrow() {
-        if(!open) {
-            document.getElementById('arrow').textContent = "►";
-        } else {
-            document.getElementById('arrow').textContent = "◄";
-        }
-    }
-    
-    updateArrow();
-    
     var openfaq = false;
     var openfaq2 = false;
     

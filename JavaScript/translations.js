@@ -115,6 +115,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const elements = document.querySelectorAll("[id^='t_'], #join");
         elements.forEach((el) => {
             const key = el.id;
+            console.log(key)
             if (translations[lang][key]) {
                 el.textContent = translations[lang][key];
             }
@@ -135,10 +136,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function updateArrow() {
-        var arrow = document.getElementById('arrow');
-        if(!open && arrow) {
+        if(!open) {
             document.getElementById('arrow').textContent = "►";
-        } else if (arrow){
+        } else {
             document.getElementById('arrow').textContent = "◄";
         }
     }
@@ -161,12 +161,11 @@ document.addEventListener("DOMContentLoaded", function() {
         updateArrow();
 
         if(open) {
-            /*if (window.matchMedia("(max-width: 600px)").matches) {
-                document.querySelector('.lang-select').style.transform = "translateX(-1.2%)";
+            if (window.matchMedia("(max-width: 600px)").matches) {
+                document.querySelector('.lang-select').style.transform = "translateX(-8%)";
             } else {
-                document.querySelector('.lang-select').style.transform = "translateX(-1.2%)";
-            }*/
-            document.querySelector('.lang-select').style.transform = "translateX(-1.2%)";
+                document.querySelector('.lang-select').style.transform = "translateX(0%)";
+            }
         } else {
             document.querySelector('.lang-select').style.transform = "translateX(-100%)";
         }
