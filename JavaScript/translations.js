@@ -120,6 +120,8 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('dropdown-content-en').id = 'dropdown-content-de';
             dropdown_en.id = 'dropdown-content-de';
             document.getElementById('dropdown-content-en').id = 'dropdown-content-de';
+            dropdown_en.id = 'dropdown-content-de';
+            document.getElementById('dropdown-content-en').id = 'dropdown-content-de';
         }
         saveLanguage(lang);
         
