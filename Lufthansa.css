@@ -94,7 +94,7 @@ header {
     margin-left: 100px;
 }
 
-#partteam {
+#t_partteam {
     margin-right: 35px;
 }
 
@@ -684,7 +684,7 @@ header {
         border-top: 0 solid white;
     }
     
-    #partteam {
+    #t_partteam {
         font-size: 15px;
         margin-right: 0;
     }
