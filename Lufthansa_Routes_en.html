@@ -51,11 +51,11 @@
     </div>
     
     <div class="Routes">
-        <h1> Routes </h1>
+        <h1 id="t_route_head"> </h1>
         <div class="allerouten">
-            <h2>Routes and Flight plans</h2>
+            <h2 id="t_route_route_head"></h2>
             <div class="long">
-                <h3><output id="route1"></output> Long-haul <output id="route1-2"></output></h3>
+                <h3><output id="route1"></output><span id="t_route_route_long"></span><output id="route1-2"></output></h3>
                 <div class="long2">
                     <div class="Route1">
                         <b>MDST ✈︎ EFKT:</b> <br>
@@ -84,7 +84,7 @@
                 </div>
             </div>
             <div class="middle">
-                <h3><output id="route2"></output> Mid-haul <output id="route2-2"></output></h3>
+                <h3><output id="route2"></output><span id="t_route_route_middle"></span><output id="route2-2"></output></h3>
                 <div class="middle2">
                     <div class="Route5">
                         <b>MDPC ✈︎ EGKK:</b> <br>
@@ -185,7 +185,7 @@
                 </div>
             </div>
             <div class="short">
-                <h3><output id="route3"></output> Short-haul <output id="route3-2"></output></h3>
+                <h3><output id="route3"></output><span id="t_route_route_short"></span><output id="route3-2"></output></h3>
                 <div class="short2">
                     <div class="Route21">
                         <b>MDPC ✈︎ GCLP:</b> <br>
@@ -300,10 +300,10 @@
         </div>
         
         <div class="lufthansagroup">
-            <h2><output id="route4"></output> Lufthansa group <output id="route4-2"></output></h2>
+            <h2><output id="route4"></output><span id="t_route_group_header"></span><output id="route4-2"></output></h2>
             <div class="Lufthansagroup">
-                <p>You can only fly with airlines of the Lufthansa group, because we are Lufthansa Virtual and we want to make the your flight experience as realistic as possible in our virtual airline. For this reason we bet you to only fly with airlines of the Lufthansa group.</p>
-                To Lufthansa group belongs: <br>
+                <p id="t_route_group_info"></p>
+                <span id="t_route_group_list"></span> <br>
                 - Lufthansa <br>
                 - Lufthansa Cargo <br>
                 - DHL <br>
@@ -317,14 +317,14 @@
         </div>
         
         <div class="aeropoints">
-            <h2><output id="route5"></output> Aeropoints <output id="route5-2"></output></h2>
+            <h2><output id="route5"></output> <span id="t_route_points_header"></span> <output id="route5-2"></output></h2>
             <div class="Aeropoints">
-                <p>For each of your flight, in which you you flew one of the given routes with one of the given aircrafts and one of the airline from the Lufthansa group and logged in <a href="https://docs.google.com/forms/d/e/1FAIpQLSeFIL7xpBnlCHS0clxO5JMr7N0GqJjfXCg_miIe928MPb3HjQ/viewform"><b>ON THIS WEBSITE</b></a> you get Aeropints. You will also get them, if you win in an event. You can also see yours and others logged flights and how many points were given <a href="https://docs.google.com/spreadsheets/d/1wn1r2uznQdqtVCvjGCeYQOGfB50SlmEoi0N3FT7ueDE/edit?gid=9757994#gid=9757994"><b>ON THIS WEBSITE</b></a>.</p>
-                <p>How much points you get depends on the route you fly and whether you used the given flight plan. This is how the points are being calculated:</p>
-                - Long-haul: &nbsp;&nbsp;&nbsp;&nbsp;75 + 15 with flightplan <br>
-                - Mid-haul: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50 + 15 with flightplan <br>
-                - Short-haul: &nbsp;&nbsp;&nbsp;25 + 15 with flightplan <br> <br>
-                <p>Depending on how much Aeropints you have, you will get other roles on our discord server. This are the roles and how much points you need for them:</p>
+                <span id="t_route_points_info"></span><a id="t_route_points_info2" href="https://docs.google.com/forms/d/e/1FAIpQLSeFIL7xpBnlCHS0clxO5JMr7N0GqJjfXCg_miIe928MPb3HjQ/viewform"><b></b></a><span id="t_route_points_info3"></span><a id="t_route_points_info4" href="https://docs.google.com/spreadsheets/d/1wn1r2uznQdqtVCvjGCeYQOGfB50SlmEoi0N3FT7ueDE/edit?gid=9757994#gid=9757994"><b></b></a>.
+                <p id="t_route_points_how"></p>
+                <span id="t_route_points_how2"></span> <br>
+                <span id="t_route_points_how3"></span> <br>
+                <span id="t_route_points_how4"></span> <br> <br>
+                <p id="t_route_points_roles"></p>
                 - 0-300: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8894ca">Trainee </span><br>
                 - 300-750: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #7988ca">First Officer </span><br>
                 - 750-1200: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #5d71ce">Senior First Officer </span><br>
