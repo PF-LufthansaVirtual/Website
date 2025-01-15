@@ -12,10 +12,10 @@
     <!-- Header -->
     <header>
         <div id="logo" onclick="window.location.href='https://discord.gg/fz923z2BgP';"></div>
-        <span class="logo-text"><a id="Startseitelink" href="index.html"> PF Lufthansa Virtual </a> </span>
+        <span class="logo-text" id="t_logo_text"></span>
         <div class="language">
             <div class="language-select">
-                <span>🌐 EN <output id="arrow"></output> </span>
+                <span id="langsel">🌐 EN </span> <span id="arrow"></span>
             </div>
             <div class="lang-select">
                 <a id="lang-en"> EN </a>
@@ -27,22 +27,22 @@
         </div>
         <div class="menustuff">
             <div class="Routesdash">
-                <a id="lang-en" href="Lufthansa_Routes_en.html"> <h3>Routes</h3> </a>
+                <h3><a id="t_routes" href="Lufthansa_Routes_en.html"></a></h3>
             </div>
             <div class="Staffdash">
-                <a id="lang-en" href="Lufthansa_staff_en.html"> <h3>Staff</h3> </a>
+                <h3><a id="t_staff" href="Lufthansa_staff_en.html"></a></h3>
             </div>
             <div class="discord">
-                <a href="http://localhost:3000/login"> <h3>log in with Discord</h3> </a>
+                <h3><a id="t_login" href="http://localhost:3000/login"></a></h3>
             </div>
         </div>
         <div class="dropdown">
-            <span id="partteam">Be Part of the Team</span>
-            <div class="dropdown-content-en">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSesMAKSHGJMNtVgYfb6nnW7LXNpK6BTaaWSEzwZqWbco8Yo0A/viewform">Event Team</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeEjqyAYE_U2trfr6xbWK-w6fzvlNFkXvVO_mZVJkSLqjL5zg/viewform">Design Team</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtNszewCz3h6LdP7lUprAtxiQSTTKeakzgHBtD2In5gVbv4w/viewform">Marketing Team</a>
-                <div class="dropdownfix"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfjzGo1na6-H8x1bPecckv-fNaZCRtMU9btfaswOIjPOzfbPA/viewform">Development Team</a></div>
+            <span id="t_partteam"></span>
+            <div class="dropdown-content" id="dropdown-content-en">
+                <a id="t_event" href="https://docs.google.com/forms/d/e/1FAIpQLSesMAKSHGJMNtVgYfb6nnW7LXNpK6BTaaWSEzwZqWbco8Yo0A/viewform"></a>
+                <a id="t_design" href="https://docs.google.com/forms/d/e/1FAIpQLSeEjqyAYE_U2trfr6xbWK-w6fzvlNFkXvVO_mZVJkSLqjL5zg/viewform"></a>
+                <a id="t_marketing" href="https://docs.google.com/forms/d/e/1FAIpQLSdtNszewCz3h6LdP7lUprAtxiQSTTKeakzgHBtD2In5gVbv4w/viewform"></a>
+                <div class="dropdownfix"><a id="t_dev" href="https://docs.google.com/forms/d/e/1FAIpQLSfjzGo1na6-H8x1bPecckv-fNaZCRtMU9btfaswOIjPOzfbPA/viewform"></a></div>
             </div>
         </div>
     </header>

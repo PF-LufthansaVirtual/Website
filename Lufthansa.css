@@ -105,8 +105,7 @@ header {
     padding: 25px 0;
 }
 
-#dropdown-content-en,
-#dropdown-content-de {
+.dropdown-content {
     display: block;
     position: absolute;
     background-color: #000E27;
@@ -127,7 +126,7 @@ header {
     transform: translate(125%, 13%);
 }
 
-.dropdown:hover #dropdown-content-en {
+#dropdown:hover #dropdown-content-en {
     transform: translate(-7%, 14.5%);
 }
 

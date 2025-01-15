@@ -47,6 +47,9 @@ document.addEventListener("DOMContentLoaded", function() {
             t_doo_contact_insta: "Instagramm: avgeek.denis",
             t_doo_contact_discord: "Or Here",
             t_trusted: "Trusted by leading aviation communities.",
+            t_staff_design_head: "🎨 Design Team",
+            t_staff_design_info: "Want to assist our team by creating images and materials for advertisements, as well as handling other important tasks on the server?",
+            t_staff_design_apply: "Apply for it",
         },
         de: {
             t_logo_text: "PF Lufthansa Virtuell",
@@ -95,30 +98,29 @@ document.addEventListener("DOMContentLoaded", function() {
             t_doo_contact_insta: "Instagramm: avgeek.denis",
             t_doo_contact_discord: "Oder Hier",
             t_trusted: "Vertraut von führenden Luftfahrt-Communities.",
+            t_staff_design_head: "🎨 Design Team",
+            t_staff_design_info: "Du willst unserem Team dabei helfen Bilder zu erstellen für Werbung, wie ander wichtige Sachen auf dem Server handhaben?",
+            t_staff_design_apply: "Bewerben Sie sich dafür",
         },
     };
 
     function setLanguage(lang) {
         var langen = document.getElementById('lang-en');
         var langde = document.getElementById('lang-de');
-        var dropdown_en = document.getElementById('dropdown-content-en');
-        var dropdown_de = document.getElementById('dropdown-content-de');
+        var dropdown = document.querySelector('.dropdown-content');
         if(lang == 'en') {
             langen.classList.add('bold');
             langde.classList.remove('bold');
             document.getElementById('langsel').textContent = "🌐 EN ";
             
-            if(dropdown_de){
-                dropdown_de.id = 'dropdown-content-en';
-            }
+            if (dropdown) dropdown.id = 'dropdown-content-en';
+            
         }else if(lang == 'de') {
             langde.classList.add('bold');
             langen.classList.remove('bold');
             document.getElementById('langsel').textContent = "🌐 DE ";
-            
-            if(dropdown_en){
-                dropdown_en.id = 'dropdown-content-de';
-            }
+
+            if (dropdown) dropdown.id = 'dropdown-content-de';
         }
         saveLanguage(lang);
         
