@@ -294,7 +294,7 @@ header {
 }
 
 .trusted img{
-    max-width: 150px;
+    max-height: 65px;
     margin: 20px;
     border-radius: 1em 1em 1em 1em;
 }
