@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function() {
             t_doo: "DOO",
             t_doo_contact: "Contact our DOO for information on daily operations.",
             t_doo_contact_name: "Discord:  theotittler",
-            t_doo_contact_insta: "Instagramm: avgeek.denis",
             t_doo_contact_discord: "Or Here",
             t_trusted: "Trusted by leading aviation communities.",
             
@@ -116,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function() {
             t_faq_start_info: "Erfahren Sie die Grundlagen und starten Sie noch heute mit unserer Community.",
             t_contacts: "Kontaktieren Sie uns",
             t_ceo: "Geschäftsführer",
-            t_ceo_contact: "Wenden Sie sich an unseren Geschäftsführer für Fragen zur Leitung.",
+            t_ceo_contact: "Wenden Sie sich an unseren Geschäftsführer für Fragen.",
             t_ceo_contact_name: "Discord:  bananensammler_",
             t_ceo_contact_discord: "Oder Hier",
             t_coo: "COO",
@@ -126,7 +125,6 @@ document.addEventListener("DOMContentLoaded", function() {
             t_doo: "DOO",
             t_doo_contact: "Kontaktieren Sie unseren DOO für Informationen zum Tagesgeschäft.",
             t_doo_contact_name: "Discord:  theotittler",
-            t_doo_contact_insta: "Instagramm: avgeek.denis",
             t_doo_contact_discord: "Oder Hier",
             t_trusted: "Vertraut von führenden Luftfahrt-Communities.",
             
