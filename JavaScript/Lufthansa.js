@@ -62,7 +62,40 @@ document.addEventListener("DOMContentLoaded", function() {
             document.querySelector(".menustuff").style.display = "none";
         });
     }
-});
+    
+    document.getElementById('t_routes').addEventListener('click', function(event) {
+        event.preventDefault(); // Verhindert das Standardverhalten eines Links
+        const isLocal = window.location.protocol === 'file:'; // Prüft, ob die Datei lokal geöffnet ist
+
+        if (isLocal) {
+            window.location.href = 'routes.html'; // Weiterleitung zu index.html
+        } else {
+            window.location.href = '/routes'; // Weiterleitung zu /home
+        }
+    });
+    
+    document.getElementById('t_staff').addEventListener('click', function(event) {
+        event.preventDefault(); // Verhindert das Standardverhalten eines Links
+        const isLocal = window.location.protocol === 'file:'; // Prüft, ob die Datei lokal geöffnet ist
+
+        if (isLocal) {
+            window.location.href = 'staff.html'; // Weiterleitung zu index.html
+        } else {
+            window.location.href = '/staff'; // Weiterleitung zu /home
+        }
+    });
+    
+    document.getElementById('homepage').addEventListener('click', function(event) {
+        event.preventDefault(); // Verhindert das Standardverhalten eines Links
+        const isLocal = window.location.protocol === 'file:'; // Prüft, ob die Datei lokal geöffnet ist
+
+        if (isLocal) {
+            window.location.href = 'index.html'; // Weiterleitung zu index.html
+        } else {
+            window.location.href = '/home'; // Weiterleitung zu /home
+        }
+    });
+    });
     
 document.addEventListener("DOMContentLoaded", function() {
     let openimg = null;

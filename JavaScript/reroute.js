@@ -11,7 +11,7 @@ function loadPage() {
     window.location.replace("/staff.html");
   } else {
     // Falls keine der definierten Routen zutrifft, bleibt die 404-Seite aktiv
-    document.body.innerHTML = "<h1>Seite nicht gefunden</h1>";
+    document.body.innerHTML = "<h1> 404 - Site not found!</h1>";
   }
 }
 
