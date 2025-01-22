@@ -717,11 +717,11 @@ header {
     }
     
     #dropdown-content-de {
-        transform: translate(125%, 17.5%);
+        transform: translate(125%, 17.25%);
     }
     
     .dropdown:hover #dropdown-content-de {
-        transform: translate(-15%, 17.5%);
+        transform: translate(-15%, 17.25%);
     }
     
     .image-text-left {
