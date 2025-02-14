@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
             t_staff_event_apply: "Apply for it",
         },
         de: {
-            t_logo_text: "PF Lufthansa Virtuell",
+            t_logo_text: "PF Lufthansa Virtual",
             t_routes: "Routen",
             t_staff: "Team",
             t_login: "Anmelden(Außer Betrieb)",
@@ -162,25 +162,302 @@ document.addEventListener("DOMContentLoaded", function() {
             t_staff_event_info: "Du willst Teil des Teams zu sein und Events zu erstellen so wie zu handeln?",
             t_staff_event_apply: "Bewerben Sie sich dafür",
         },
+        fr: {
+            t_logo_text: "PF Lufthansa Virtual",
+            t_routes: "Itinéraires",
+            t_staff: "Équipe",
+            t_login: "Connexion (Hors service)",
+            t_partteam: "Faites partie de l'équipe",
+            t_event: "Équipe d'événements",
+            t_design: "Équipe de design",
+            t_marketing: "Équipe marketing",
+            t_dev: "Équipe de développement",
+            join: "REJOIGNEZ MAINTENANT",
+            t_infos: "↓ Plus d'informations ↓",
+            t_info_head: "À propos de nous",
+            t_info_pf_1: "PF Lufthansa Virtual connecte les passionnés d'aviation du monde entier, offrant une expérience de vol réaliste et une communauté dynamique.",
+            t_info_pf_2: "Des débutants aux pilotes expérimentés, nous offrons des opportunités de développement des compétences, de travail d'équipe et d'aventures passionnantes.",
+            t_routes_head: "Itinéraires",
+            t_routes_pf_1: "Notre réseau comprend une variété de vols courts, moyens et long-courriers à travers Project Flight, avec un large choix d'avions et de compagnies aériennes. Nous avons conçu les itinéraires pour qu'ils soient aussi réalistes et agréables que possible.",
+            t_routes_pf_2: "N'hésitez pas à explorer n'importe quel itinéraire à votre convenance, tant que vous sélectionnez un avion approuvé et une compagnie du groupe Lufthansa. Pour plus d'informations sur nos itinéraires...",
+            t_routes_pf_click: "Cliquez ici",
+            t_private_server: "Serveur privé",
+            t_private_server_info: "Découvrez notre serveur exclusif réservé aux membres.",
+            t_server_details: "Notre serveur privé prend actuellement en charge jusqu'à 20 joueurs, mais des plans sont déjà en cours pour augmenter sa capacité à l'avenir. Découvrez tous les détails nécessaires pour rejoindre et faire partie de cette expérience exclusive.",
+            t_server_id: "ID du serveur : 2yiVc8MUVZ",
+            t_server_pass: "Mot de passe : Lufthansa",
+            t_staff_team: "Équipe de personnel",
+            t_staff_info: "Rencontrez nos membres du personnel dédiés et compétents qui garantissent des opérations fluides.",
+            t_staff_apply: "Intéressé à rejoindre notre personnel ? Postulez maintenant pour faire partie de notre équipe.",
+            t_faq: "Questions fréquentes",
+            t_faq_pilot: "Comment devenir pilote ?",
+            t_faq_pilot_info: "Vous n'avez pas besoin de postuler ! Vous pouvez simplement commencer à voler et enregistrer vos vols sur le serveur.",
+            t_faq_start: "Commencer",
+            t_faq_start_info: "Regardez la vidéo sur notre chaîne Youtube Lufthansa Virtual",
+            t_contacts: "Contactez-nous",
+            t_ceo: "PDG",
+            t_ceo_contact: "Contactez notre PDG pour toute question liée au leadership",
+            t_ceo_contact_name: "Discord : bananensammler_",
+            t_ceo_contact_discord: "Ou ici",
+            t_coo: "COO",
+            t_coo_contact: "Contactez notre COO pour des préoccupations opérationnelles.",
+            t_coo_contact_name: "Discord : itstim0904",
+            t_coo_contact_discord: "Ou ici",
+            t_doo: "DOO",
+            t_doo_contact: "Contactez notre DOO pour des informations sur les opérations quotidiennes.",
+            t_doo_contact_name: "Discord : theotittler",
+            t_doo_contact_discord: "Ou ici",
+            t_trusted: "Approuvé par les principales communautés d'aviation.",
+
+            t_route_head: "Itinéraires",
+            t_route_route_head: "Itinéraires et plans de vol",
+            t_route_route_long: "Long-courrier",
+            t_route_route_middle: "Moyen-courrier",
+            t_route_route_short: "Court-courrier",
+            t_route_group_header: "Groupe Lufthansa",
+            t_route_group_info: "Vous ne pouvez voler qu'avec des compagnies du groupe Lufthansa, car nous sommes Lufthansa Virtual et nous voulons que votre expérience de vol soit aussi réaliste que possible dans notre compagnie aérienne virtuelle. Pour cette raison, nous vous demandons de voler uniquement avec des compagnies du groupe Lufthansa.",
+            t_route_group_list: "Le groupe Lufthansa comprend :",
+            t_route_points_header: "Aéropoints",
+            t_route_points_info: "Pour chacun de vos vols, dans lequel vous avez suivi l'un des itinéraires donnés avec l'un des avions autorisés et une compagnie du groupe Lufthansa, et l'avez enregistré ",
+            t_route_points_info2: "SUR CE SITE",
+            t_route_points_info3: " vous gagnez des Aéropoints. Vous les obtenez également si vous gagnez un événement. Vous pouvez également voir vos vols enregistrés et ceux des autres, ainsi que le nombre de points attribués ",
+            t_route_points_info4: "SUR CE SITE",
+            t_route_points_how: "Le nombre de points que vous obtenez dépend de l'itinéraire que vous suivez et si vous avez utilisé le plan de vol donné. Voici comment les points sont calculés :",
+            t_route_points_how2: "- Long-courrier : 75 + 15 avec plan de vol",
+            t_route_points_how3: "- Moyen-courrier : 50 + 15 avec plan de vol",
+            t_route_points_how4: "- Court-courrier : 25 + 15 avec plan de vol",
+            t_route_points_roles: "En fonction du nombre d'Aéropoints que vous avez, vous obtiendrez différents rôles sur notre serveur Discord. Voici les rôles et le nombre de points nécessaires :",
+
+            t_staff_design_head: "🎨 Équipe de design",
+            t_staff_design_info: "Vous souhaitez aider notre équipe en créant des images et des matériaux pour les publicités, ainsi qu'en gérant d'autres tâches importantes sur le serveur ?",
+            t_staff_design_apply: "Postulez",
+            t_staff_development_head: "⚒️ Équipe de développement",
+            t_staff_development_info: "Vous souhaitez voir notre serveur évoluer avec le temps et participer à donner vie aux idées ? Rejoignez maintenant",
+            t_staff_development_info2: "Aucune compétence en codage requise !",
+            t_staff_development_apply: "Postulez",
+            t_staff_marketing_head: "🥂 Équipe marketing",
+            t_staff_marketing_info: "Vous voulez faire partie de l'équipe, créer des publicités pour nous et communiquer avec nos partenaires ?",
+            t_staff_marketing_info2: "Aidez-nous à faire grandir notre communauté !",
+            t_staff_marketing_apply: "Postulez",
+            t_staff_event_head: "🏝️ Équipe d'événements",
+            t_staff_event_info: "Vous souhaitez faire partie de l'équipe, créer et gérer des événements ?",
+            t_staff_event_apply: "Postulez",
+        },
+        es: {
+            t_logo_text: "PF Lufthansa Virtual",
+            t_routes: "Rutas",
+            t_staff: "Personal",
+            t_login: "Iniciar sesión (Fuera de servicio)",
+            t_partteam: "Sé parte del equipo",
+            t_event: "Equipo de eventos",
+            t_design: "Equipo de diseño",
+            t_marketing: "Equipo de marketing",
+            t_dev: "Equipo de desarrollo",
+            join: "ÚNETE AHORA",
+            t_infos: "↓ Más información ↓",
+            t_info_head: "Sobre nosotros",
+            t_info_pf_1: "PF Lufthansa Virtual conecta a entusiastas de la aviación en todo el mundo, ofreciendo una experiencia de vuelo realista y una comunidad vibrante.",
+            t_info_pf_2: "Desde principiantes hasta pilotos experimentados, brindamos oportunidades para desarrollar habilidades, trabajo en equipo y emocionantes aventuras.",
+            t_routes_head: "Rutas",
+            t_routes_pf_1: "Nuestra red incluye una variedad de rutas de corta, media y larga distancia en Project Flight, con una gama de aviones y aerolíneas para elegir. Hemos diseñado las rutas para que sean lo más realistas y disfrutables posible.",
+            t_routes_pf_2: "Siéntete libre de explorar cualquier ruta a tu conveniencia, siempre que selecciones un avión aprobado y una aerolínea del grupo Lufthansa. Para más información sobre nuestras rutas...",
+            t_routes_pf_click: "Haz clic aquí",
+            t_private_server: "Servidor privado",
+            t_private_server_info: "Experimenta nuestro servidor exclusivo diseñado solo para miembros.",
+            t_server_details: "Nuestro servidor privado actualmente admite hasta 20 jugadores, pero ya estamos planeando expandir su capacidad en el futuro. Descubre todos los detalles que necesitas para unirte y ser parte de esta experiencia exclusiva.",
+            t_server_id: "ID del servidor: 2yiVc8MUVZ",
+            t_server_pass: "Contraseña: Lufthansa",
+            t_staff_team: "Equipo de personal",
+            t_staff_info: "Conoce a nuestros dedicados y capacitados miembros del personal que garantizan operaciones sin problemas.",
+            t_staff_apply: "¿Interesado en unirte al personal? Solicita ahora para ser parte de nuestro equipo.",
+            t_faq: "Preguntas frecuentes",
+            t_faq_pilot: "¿Cómo convertirse en piloto?",
+            t_faq_pilot_info: "¡No necesitas postularte! Puedes comenzar a volar y registrar tus vuelos en el servidor.",
+            t_faq_start: "Cómo empezar",
+            t_faq_start_info: "Mira el video en nuestro canal de Youtube Lufthansa Virtual",
+            t_contacts: "Contáctanos",
+            t_ceo: "CEO",
+            t_ceo_contact: "Comunícate con nuestro CEO para consultas relacionadas con liderazgo",
+            t_ceo_contact_name: "Discord:  bananensammler_",
+            t_ceo_contact_discord: "O aquí",
+            t_coo: "COO",
+            t_coo_contact: "Ponte en contacto con nuestro COO para preocupaciones operativas.",
+            t_coo_contact_name: "Discord:  itstim0904",
+            t_coo_contact_discord: "O aquí",
+            t_doo: "DOO",
+            t_doo_contact: "Contacta a nuestro DOO para información sobre operaciones diarias.",
+            t_doo_contact_name: "Discord:  theotittler",
+            t_doo_contact_discord: "O aquí",
+            t_trusted: "Confiado por las principales comunidades de aviación.",
+
+            t_route_head: "Rutas",
+            t_route_route_head: "Rutas y planes de vuelo",
+            t_route_route_long: "Larga distancia",
+            t_route_route_middle: "Media distancia",
+            t_route_route_short: "Corta distancia",
+            t_route_group_header: "Grupo Lufthansa",
+            t_route_group_info: "Solo puedes volar con aerolíneas del grupo Lufthansa, porque somos Lufthansa Virtual y queremos que tu experiencia de vuelo sea lo más realista posible en nuestra aerolínea virtual. Por esta razón, te pedimos que vueles únicamente con aerolíneas del grupo Lufthansa.",
+            t_route_group_list: "El grupo Lufthansa incluye:",
+            t_route_points_header: "Aeropuntos",
+            t_route_points_info: "Por cada uno de tus vuelos, en el que volaste una de las rutas dadas con uno de los aviones permitidos y una de las aerolíneas del grupo Lufthansa, y lo registraste ",
+            t_route_points_info2: "EN ESTE SITIO WEB",
+            t_route_points_info3: " obtendrás Aeropuntos. También los obtendrás si ganas en un evento. También puedes ver tus vuelos registrados y los de otros, y cuántos puntos se otorgaron ",
+            t_route_points_info4: "EN ESTE SITIO WEB",
+            t_route_points_how: "La cantidad de puntos que obtienes depende de la ruta que vueles y de si utilizaste el plan de vuelo dado. Así es como se calculan los puntos:",
+            t_route_points_how2: "- Larga distancia: 75 + 15 con plan de vuelo",
+            t_route_points_how3: "- Media distancia: 50 + 15 con plan de vuelo",
+            t_route_points_how4: "- Corta distancia: 25 + 15 con plan de vuelo",
+            t_route_points_roles: "Dependiendo de la cantidad de Aeropuntos que tengas, obtendrás diferentes roles en nuestro servidor de Discord. Estos son los roles y los puntos necesarios para ellos:",
+
+            t_staff_design_head: "🎨 Equipo de diseño",
+            t_staff_design_info: "¿Quieres ayudar a nuestro equipo creando imágenes y materiales para anuncios, así como manejar otras tareas importantes en el servidor?",
+            t_staff_design_apply: "Solicítalo",
+            t_staff_development_head: "⚒️ Equipo de desarrollo",
+            t_staff_development_info: "¿Quieres ver evolucionar nuestro servidor con el tiempo y ser parte de dar vida a ideas? Únete ahora",
+            t_staff_development_info2: "¡No se necesita codificación!",
+            t_staff_development_apply: "Solicítalo",
+            t_staff_marketing_head: "🥂 Equipo de marketing",
+            t_staff_marketing_info: "¿Quieres ser parte del equipo, crear anuncios para nosotros y comunicarte con socios?",
+            t_staff_marketing_info2: "¡Ayúdanos a hacer crecer nuestra comunidad!",
+            t_staff_marketing_apply: "Solicítalo",
+            t_staff_event_head: "🏝️ Equipo de eventos",
+            t_staff_event_info: "¿Quieres ser parte del equipo, crear y gestionar eventos?",
+            t_staff_event_apply: "Solicítalo",
+        },
+        ru: {
+            t_logo_text: "PF Lufthansa Virtual",
+            t_routes: "Маршруты",
+            t_staff: "Персонал",
+            t_login: "Вход (Не работает)",
+            t_partteam: "Зай часть команды",
+            t_event: "Команда мероприятий",
+            t_design: "Дизайнерская команда",
+            t_marketing: "Маркетинговая команда",
+            t_dev: "Команда разработчиков",
+            join: "ПРИСОЕДИНИТЬСЯ СЕЙЧАС",
+            t_infos: "↓ Дополнительная информация ↓",
+            t_info_head: "О нас",
+            t_info_pf_1: "PF Lufthansa Virtual соединяет авиационных энтузиастов со всего мира, предлагая реалистичный опыт полетов и активное сообщество.",
+            t_info_pf_2: "От новичков до опытных пилотов — мы предоставляем возможности для развития навыков, работы в команде и захватывающих приключений.",
+            t_routes_head: "Маршруты",
+            t_routes_pf_1: "Наша сеть включает в себя различные короткие, средние и дальние маршруты в рамках Project Flight с выбором самолетов и авиалиний. Мы создали маршруты максимально реалистичными и приятными.",
+            t_routes_pf_2: "Вы можете исследовать любой маршрут в удобное для вас время, при условии выбора утвержденного самолета и авиалинии группы Lufthansa. Для получения дополнительной информации о маршрутах...",
+            t_routes_pf_click: "Нажмите здесь",
+            t_private_server: "Приватный сервер",
+            t_private_server_info: "Испытайте наш эксклюзивный сервер, доступный только для членов.",
+            t_server_details: "Наш приватный сервер в настоящее время поддерживает до 20 игроков, но уже запланировано его расширение в будущем. Узнайте все детали для участия и присоединитесь к этому уникальному опыту.",
+            t_server_id: "ID сервера: 2yiVc8MUVZ",
+            t_server_pass: "Пароль: Lufthansa",
+            t_staff_team: "Команда сотрудников",
+            t_staff_info: "Познакомьтесь с нашей преданной и опытной командой, которая обеспечивает бесперебойную работу.",
+            t_staff_apply: "Хотите присоединиться к нашей команде? Подайте заявку прямо сейчас.",
+            t_faq: "Часто задаваемые вопросы",
+            t_faq_pilot: "Как стать пилотом?",
+            t_faq_pilot_info: "Вам не нужно подавать заявку! Просто начните летать и записывать свои полеты на сервере.",
+            t_faq_start: "Начало работы",
+            t_faq_start_info: "Посмотрите видео на нашем YouTube-канале Lufthansa Virtual",
+            t_contacts: "Свяжитесь с нами",
+            t_ceo: "Генеральный директор",
+            t_ceo_contact: "Свяжитесь с нашим генеральным директором по вопросам, связанным с руководством.",
+            t_ceo_contact_name: "Discord: bananensammler_",
+            t_ceo_contact_discord: "Или здесь",
+            t_coo: "Операционный директор",
+            t_coo_contact: "Свяжитесь с нашим операционным директором по вопросам операций.",
+            t_coo_contact_name: "Discord: itstim0904",
+            t_coo_contact_discord: "Или здесь",
+            t_doo: "Директор операций",
+            t_doo_contact: "Свяжитесь с нашим директором по операциям для получения информации о ежедневных операциях.",
+            t_doo_contact_name: "Discord: theotittler",
+            t_doo_contact_discord: "Или здесь",
+            t_trusted: "Доверие ведущих авиационных сообществ.",
+            t_route_head: "Маршруты",
+            t_route_route_head: "Маршруты и планы полетов",
+            t_route_route_long: "Дальне магистральные",
+            t_route_route_middle: "Средне магистральные",
+            t_route_route_short: "Коротко магистральные",
+            t_route_group_header: "Группа Lufthansa",
+            t_route_group_info: "Вы можете летать только с авиалиниями группы Lufthansa, потому что мы — Lufthansa Virtual и стремимся сделать ваш опыт полетов максимально реалистичным в рамках нашей виртуальной авиакомпании. Поэтому мы просим вас летать только с авиалиниями группы Lufthansa.",
+            t_route_group_list: "К группе Lufthansa относятся:",
+            t_route_points_header: "Аэробаллы",
+            t_route_points_info: "За каждый ваш полет, выполненный по указанным маршрутам на утвержденном самолете и с одной из авиалиний группы Lufthansa, и зарегистрированный",
+            t_route_points_info2: "НА ЭТОМ САЙТЕ",
+            t_route_points_info3: "вы получите аэробаллы. Вы также получите их, если выиграете в мероприятии. Вы можете увидеть свои и чужие зарегистрированные полеты и количество полученных баллов",
+            t_route_points_info4: "НА ЭТОМ САЙТЕ",
+            t_route_points_how: "Количество полученных баллов зависит от маршрута и использования предложенного плана полета. Баллы начисляются следующим образом:",
+            t_route_points_how2: "- Дальнемагистральные: 75 + 15 за использование плана полета",
+            t_route_points_how3: "- Среднемагистральные: 50 + 15 за использование плана полета",
+            t_route_points_how4: "- Короткомагистральные: 25 + 15 за использование плана полета",
+            t_route_points_roles: "В зависимости от количества аэробаллов вы получите роли на нашем сервере Discord. Вот роли и необходимое количество баллов:",
+            t_staff_design_head: "🎨 Команда дизайнеров",
+            t_staff_design_info: "Хотите помочь нашей команде, создавая изображения и материалы для рекламы, а также выполняя другие важные задачи на сервере?",
+            t_staff_design_apply: "Подать заявку",
+            t_staff_development_head: "⚒️ Команда разработчиков",
+            t_staff_development_info: "Хотите видеть, как наш сервер развивается, и участвовать в воплощении идей в жизнь? Присоединяйтесь сейчас",
+            t_staff_development_info2: "Кодирование не требуется!",
+            t_staff_development_apply: "Подать заявку",
+            t_staff_marketing_head: "🥂 Маркетинговая команда",
+            t_staff_marketing_info: "Хотите быть частью команды, создавать рекламу для нас и общаться с партнерами?",
+            t_staff_marketing_info2: "Помогите нам развивать наше сообщество!",
+            t_staff_marketing_apply: "Подать заявку",
+            t_staff_event_head: "🏝️ Команда мероприятий",
+            t_staff_event_info: "Хотите быть частью команды, создавать и управлять мероприятиями?",
+            t_staff_event_apply: "Подать заявку"
+        },
     };
 
     function setLanguage(lang) {
         var langen = document.getElementById('lang-en');
         var langde = document.getElementById('lang-de');
+        var langru = document.getElementById('lang-ru');
+        var langfr = document.getElementById('lang-fr');
+        var langes = document.getElementById('lang-es');
         var dropdown = document.querySelector('.dropdown-content');
         if(lang == 'en') {
             langen.classList.add('bold');
             langde.classList.remove('bold');
+            langru.classList.remove('bold');
+            langfr.classList.remove('bold');
+            langes.classList.remove('bold');
             document.getElementById('langsel').textContent = "🌐 EN ";
             
             if (dropdown) dropdown.id = 'dropdown-content-en';
             
-        }else if(lang == 'de') {
-            langde.classList.add('bold');
+        } else if(lang == 'de') {
             langen.classList.remove('bold');
+            langde.classList.add('bold');
+            langru.classList.remove('bold');
+            langfr.classList.remove('bold');
+            langes.classList.remove('bold');
             document.getElementById('langsel').textContent = "🌐 DE ";
 
             if (dropdown) dropdown.id = 'dropdown-content-de';
+        } else if(lang == 'ru') {
+            langen.classList.remove('bold');
+            langde.classList.remove('bold');
+            langru.classList.add('bold');
+            langfr.classList.remove('bold');
+            langes.classList.remove('bold');
+            document.getElementById('langsel').textContent = "🌐 RU ";
+
+            if (dropdown) dropdown.id = 'dropdown-content-ru';
+        } else if(lang == 'fr') {
+            langen.classList.remove('bold');
+            langde.classList.remove('bold');
+            langru.classList.remove('bold');
+            langfr.classList.add('bold');
+            langes.classList.remove('bold');
+            document.getElementById('langsel').textContent = "🌐 FR ";
+
+            if (dropdown) dropdown.id = 'dropdown-content-fr';
+        } else if(lang == 'es') {
+            langen.classList.remove('bold');
+            langde.classList.remove('bold');
+            langru.classList.remove('bold');
+            langfr.classList.remove('bold');
+            langes.classList.add('bold');
+            document.getElementById('langsel').textContent = "🌐 ES ";
+
+            if (dropdown) dropdown.id = 'dropdown-content-es';
         }
         saveLanguage(lang);
         
@@ -222,6 +499,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     document.getElementById('lang-de').addEventListener('click', function() {
         setLanguage('de');
+    });
+    document.getElementById('lang-ru').addEventListener('click', function() {
+        setLanguage('ru');
+    });
+    document.getElementById('lang-fr').addEventListener('click', function() {
+        setLanguage('fr');
+    });
+    document.getElementById('lang-es').addEventListener('click', function() {
+        setLanguage('es');
     });
 
     var open = false;

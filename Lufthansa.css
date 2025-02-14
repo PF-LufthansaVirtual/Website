@@ -55,6 +55,7 @@ header {
 
 .language-select {
     padding: 10px 10px;
+    min-width: 70px;
 }
 
 .lang-select {
@@ -94,6 +95,15 @@ header {
     margin-left: 100px;
 }
 
+.discord {
+    display: none;
+}
+
+#login {
+    height: 50px;
+    margin-left: auto;
+}
+
 #t_partteam {
     margin-right: 35px;
 }
@@ -101,7 +111,7 @@ header {
 /* Dropdown-Menü */
 .dropdown {
     display: inline-block;
-    margin-left: auto;
+    margin-left: 20px;
     padding: 25px 0;
 }
 
@@ -117,7 +127,10 @@ header {
 }
 
 .dropdown:hover #dropdown-content-en,
-.dropdown:hover #dropdown-content-de {
+.dropdown:hover #dropdown-content-de,
+.dropdown:hover #dropdown-content-ru,
+.dropdown:hover #dropdown-content-fr,
+.dropdown:hover #dropdown-content-es {
     transform: translate(0, 14%);
     transition: transform 0.5s ease;
 }
@@ -138,12 +151,39 @@ header {
     transform: translate(10%, 14.5%);
 }
 
+#dropdown-content-ru {
+    transform: translate(125%, 10.3%);
+}
+
+.dropdown:hover #dropdown-content-ru {
+    transform: translate(0%, 10.3%);
+}
+
+#dropdown-content-fr {
+    transform: translate(125%, 14.5%);
+}
+
+.dropdown:hover #dropdown-content-fr {
+    transform: translate(-15%, 14.5%);
+}
+
+#dropdown-content-es {
+    transform: translate(125%, 14.5%);
+}
+
+.dropdown:hover #dropdown-content-es {
+    transform: translate(-15%, 14.5%);
+}
+
 .dropdownfix a:hover {
     border-radius: 0 0 0 1em;
 }
 
 #dropdown-content-en a,
-#dropdown-content-de a {
+#dropdown-content-de a,
+#dropdown-content-ru a,
+#dropdown-content-fr a,
+#dropdown-content-es a {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
@@ -151,7 +191,10 @@ header {
 }
 
 #dropdown-content-en a:hover,
-#dropdown-content-de a:hover {
+#dropdown-content-de a:hover,
+#dropdown-content-ru a:hover,
+#dropdown-content-fr a:hover,
+#dropdown-content-es a:hover {
     background-color: #164068;
 }
 
@@ -276,7 +319,7 @@ header {
     margin-bottom: 100px;
     border-radius: 1em 1em 1em 1em;
     width: 350px;
-    height: 205px;
+    height: auto;
     text-align: left;
 }
 
@@ -349,6 +392,16 @@ header {
     padding: 10px;
     margin: 30px;
     text-align: center;
+}
+
+#t_route_route_long,
+#t_route_route_middle,
+#t_route_route_short {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Nicht-Präfix-Versionen */
 }
 
 .Route1,
@@ -662,8 +715,9 @@ header {
     }
     
     .language-select {
-        min-width: 63px;
-        padding: 10px 8.5px;
+        text-align: center;
+        min-width: 85.4px;
+        padding: 10px 0px;
     }
     
     .menu {
@@ -676,6 +730,10 @@ header {
     .discord {
         font-size: 15px;
         margin: 0;
+    }
+    
+    .discord {
+        display: block;
     }
     
     .menustuff {
@@ -692,6 +750,10 @@ header {
         border-top: 0 solid white;
     }
     
+    #login {
+        display: none;
+    }
+    
     #t_partteam {
         font-size: 15px;
         margin-right: 0;
@@ -706,6 +768,7 @@ header {
         padding-top: 10px;
         top: 130%;
         transform: translateX(-100%);
+        width: 92.5px;
     }
     
     #dropdown-content-en {
@@ -717,11 +780,35 @@ header {
     }
     
     #dropdown-content-de {
-        transform: translate(125%, 17.4%);
+        transform: translate(125%, 17.8%);
     }
     
     .dropdown:hover #dropdown-content-de {
-        transform: translate(-15%, 17.4%);
+        transform: translate(-20%, 17.8%);
+    }
+    
+    #dropdown-content-ru {
+        transform: translate(125%, 12.5%);
+    }
+    
+    .dropdown:hover #dropdown-content-ru {
+        transform: translate(-26%, 12.4%);
+    }
+    
+    #dropdown-content-fr {
+        transform: translate(125%, 14.4%);
+    }
+    
+    .dropdown:hover #dropdown-content-fr {
+        transform: translate(-21%, 14.4%);
+    }
+    
+    #dropdown-content-es {
+        transform: translate(125%, 13.3%);
+    }
+    
+    .dropdown:hover #dropdown-content-es {
+        transform: translate(-22%, 13.3%);
     }
     
     .image-text-left {
