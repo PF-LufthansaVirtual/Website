@@ -576,6 +576,10 @@ header {
         width: 800px;
         border-radius: 1em 1em 1em 1em;
     }
+    
+    .marketing img {
+        height: 375px;
+    }
 
     .design,
     .development,
