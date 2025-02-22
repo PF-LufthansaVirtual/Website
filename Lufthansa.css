@@ -96,6 +96,10 @@ header {
     margin-left: 100px;
 }
 
+.PFConnectdash {
+    display: none;
+}
+
 .discord {
     display: none;
 }
