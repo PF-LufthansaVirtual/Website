@@ -91,6 +91,7 @@ header {
 
 .Routesdash,
 .Staffdash,
+.PFConnectdash,
 .discord {
     margin-left: 100px;
 }
@@ -736,6 +737,7 @@ header {
     
     .Routesdash,
     .Staffdash,
+    .PFConnectdash,
     .discord {
         font-size: 15px;
         margin: 0;

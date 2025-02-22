@@ -9,6 +9,8 @@ function loadPage() {
     window.location.replace("/routes.html"); // Lade Lufthansa_Routes_en.html für /routes
   } else if (path === "/staff") {
     window.location.replace("/staff.html");
+  } else if (path === "/PFConnect/pfconnect") {
+    window.location.replace("/PFConnect/pfconnect.html");
   } else {
     // Falls keine der definierten Routen zutrifft, bleibt die 404-Seite aktiv
     document.body.innerHTML = "<h1> 404 - Site not found!</h1>";
