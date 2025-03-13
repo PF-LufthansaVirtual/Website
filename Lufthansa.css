@@ -97,7 +97,7 @@ header {
 }
 
 .PFConnectdash {
-    display: none;
+    display: block;
 }
 
 .discord {
